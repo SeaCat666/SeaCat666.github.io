@@ -31,6 +31,47 @@
     #container.show {
       background: linear-gradient(200deg,#a0cfe4,#e8c37e);
     }
+    
+    .qqewm {
+      z-index: 999;
+      position: absolute;
+      left: 150px;
+      top: 40px;
+      width: 150px;
+      display: none;
+    }
+
+    .weibo:hover .qqewm,
+    .weibo:visited .qqewm,
+    .weibo:active .qqewm {
+      display: block;
+      transition: 0.5s;
+    }
+
+    .wxewm {
+      z-index: 999;
+      position: absolute;
+      left: 150px;
+      top: 40px;
+      width: 150px;
+      display: none;
+    }
+
+    #awx:hover .wxewm,
+    #awx:visited .wxewm,
+    #awx:active .wxewm {
+      display: block;
+    }
+    #yy{
+      position: fixed;
+      bottom:  0;
+      left: 0;
+      z-index: 1000;
+    }
+    #yy iframe{
+      z-index: 1000;
+      opacity: 0.5;
+    }
   </style>
   
 
@@ -39,6 +80,10 @@
 <meta name="generator" content="Hexo 5.3.0"></head>
 
 <body>
+  <div id="yy">
+    <!-- 网易云音乐 -->
+    <iframe frameborder="no" border="0" auto=1 marginwidth="0" marginheight="0" width=300 height=86 src="//music.163.com/outchain/player?type=2&id=544556228&auto=1&height=66"></iframe>
+  </div>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
@@ -81,13 +126,17 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
-		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+        <a class="github" target="_blank" href="https://github.com/SeaCat666" title="github"><i
+          class="icon-github"></i></a>
+
+
+
+      <a class="weibo" id="aqq" href="#" title="QQ"><img src="img/qq.png" alt="QQ" style="width: 80%;">
+        <img src="img/qqewm.png" alt="qq" class="qqewm"> </a>
+      <a class="weibo" id="awx" href="#" title="微信"><img src="img/wx.png" alt="QQ" style="width: 80%;">
+        <img src="img/wxewm.png" alt="微信" class="wxewm"> </a>
+      <a class="weibo" target="_blank" href="https://space.bilibili.com/299722802" title="bilibili"><img
+          src="img/bilibili.png" alt="QQ" style="width: 80%;"></a>
 		        
 			</div>
 		</nav>
@@ -108,7 +157,7 @@
 				<img src="../../../../img/head.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author"></h1>
+			  <h1 class="header-author js-header-author">深海猫</h1>
 			</hgroup>
 			
 			
