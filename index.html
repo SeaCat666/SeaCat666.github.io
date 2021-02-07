@@ -181,7 +181,60 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="Manjaro双系统安装（折腾）记录"><a href="#Manjaro双系统安装（折腾）记录" class="headerlink" title="Manjaro双系统安装（折腾）记录"></a>Manjaro双系统安装（折腾）记录</h1><p>想着在电脑上装两个系统感觉很炫，跟朋友一起装了个deepin20v，然后换成manjaro kde了</p>
+<p><img src="/2021/02/07/%E5%8F%8C%E7%B3%BB%E7%BB%9F%E4%B9%8B%E4%BB%8A%E6%97%A5%E6%97%A0%E4%BA%8B%E5%8F%AF%E5%81%9A/1.png" alt="聊天记录"></p>
+<p>算是腾出60G来装一个玩具 XD</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
+<li>叫上已安装好了的hxd辅助你完成安装<ul>
+<li><img src="/2021/02/07/%E5%8F%8C%E7%B3%BB%E7%BB%9F%E4%B9%8B%E4%BB%8A%E6%97%A5%E6%97%A0%E4%BA%8B%E5%8F%AF%E5%81%9A/2.png" alt="聊天记录"></li>
+</ul>
+</li>
+<li>腾出60G装系统（此电脑右击》属性》磁盘管理》右击盘》压缩60G）<ul>
+<li><img src="/2021/02/07/%E5%8F%8C%E7%B3%BB%E7%BB%9F%E4%B9%8B%E4%BB%8A%E6%97%A5%E6%97%A0%E4%BA%8B%E5%8F%AF%E5%81%9A/3.png" alt="聊天记录"></li>
+</ul>
+</li>
+<li>下载manjaro镜像 <a target="_blank" rel="noopener" href="https://mirrors.bfsu.edu.cn/">下载点我（kde版）</a>←官网下载很慢，这里贼快</li>
+<li>制作启动盘工具 <a target="_blank" rel="noopener" href="https://www.balena.io/etcher/">下载点我</a></li>
+</ul>
+<h2 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h2><ol>
+<li><p>使用balenaEtcher安装到优盘（优盘最好是空的，不然文件乱七八糟）</p>
+</li>
+<li><p>重启进入BIOS 选择优盘启动</p>
+</li>
+<li><p>分区 文件系统：ext4 挂载点：/ </p>
+<p>看别的大佬设置比我多，但问题不大，我缺一个300MB的EFI分区，应该是硬盘问题，自己创一个就好了 <a href="=https://blog.csdn.net/weixin_43852792/article/details/105409712">创建参考</a></p>
+</li>
+<li><p>安装引导程序(<strong>踩坑</strong>)</p>
+<p>这里选第二个就好了，安装是在这里</p>
+<p>  <img src="/2021/02/07/%E5%8F%8C%E7%B3%BB%E7%BB%9F%E4%B9%8B%E4%BB%8A%E6%97%A5%E6%97%A0%E4%BA%8B%E5%8F%AF%E5%81%9A/4.png" alt="截图"></p>
+<p>  我这是有两个硬盘，第一个是C盘的系统盘，好兄弟说别选第一个，会报错</p>
+<p>  第三个系统分区不知道是什么然后</p>
+<p>  <img src="/2021/02/07/%E5%8F%8C%E7%B3%BB%E7%BB%9F%E4%B9%8B%E4%BB%8A%E6%97%A5%E6%97%A0%E4%BA%8B%E5%8F%AF%E5%81%9A/5.png" alt="截图"></p>
+<p>  BIOS里只有两个硬盘一个不知道是什么，都不能进入安装的manjaro（害我重装三次 淦）</p>
+<p>  <img src="/2021/02/07/%E5%8F%8C%E7%B3%BB%E7%BB%9F%E4%B9%8B%E4%BB%8A%E6%97%A5%E6%97%A0%E4%BA%8B%E5%8F%AF%E5%81%9A/6.png" alt="截图"></p>
+</li>
+<li><p>配置软件源</p>
+<p>  去终端安装编辑器vim：<code>sudo pacman -S vim</code></p>
+<p>  更改国内镜像源：<code>sudo pacman-mirrors -i -c China -m rank</code> </p>
+<p>  同步（刷新）：<code>sudo pacman -Syy</code></p>
+<p>  增加中文社区的源，在 /etc/pacman.conf 中添加 archlinuxcn 源：<br>  <code>sudo vim /etc/pacman.conf</code></p>
+<p>  在最后添加：</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[archlinuxcn]</span><br><span class="line">SigLevel &#x3D; Optional TrustedOnly</span><br><span class="line">Server &#x3D; https:&#x2F;&#x2F;mirrors.ustc.edu.cn&#x2F;archlinuxcn&#x2F;$arch </span><br></pre></td></tr></table></figure></li>
+<li><p>差不多了可以用了（其实并不是）</p>
+<p>  意思就是可以开始折腾了，安装软件就可以折腾很久了（输入法安装一下午 淦）</p>
+</li>
+</ol>
+<h2 id="几个小指令"><a href="#几个小指令" class="headerlink" title="几个小指令"></a>几个小指令</h2><ol>
+<li>安装软件命令：<br> <code>sudo pacman -S 软件名字</code></li>
+<li>卸载软件命令：<br> <code>sudo pacman -R 软件名字</code></li>
+<li>查看系统信息：<br> <code>screenfetch</code></li>
+</ol>
+<h2 id="关于"><a href="#关于" class="headerlink" title="关于"></a>关于</h2><p>内容仅供参考，没有多少技术含量，并不一定能够复现</p>
+<p><img src="/2021/02/07/%E5%8F%8C%E7%B3%BB%E7%BB%9F%E4%B9%8B%E4%BB%8A%E6%97%A5%E6%97%A0%E4%BA%8B%E5%8F%AF%E5%81%9A/7.jpg" alt="表情包"></p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/HGNET/p/12712977.html">https://www.cnblogs.com/HGNET/p/12712977.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/21c39bc4dd31">https://www.jianshu.com/p/21c39bc4dd31</a></p>
+<p>hxd尿分叉</p>
+
       
 
       
@@ -189,6 +242,21 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">manjaro</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -541,6 +609,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Hello World</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">manjaro</a>
               </li>
             
             <div class="clearfix"></div>
