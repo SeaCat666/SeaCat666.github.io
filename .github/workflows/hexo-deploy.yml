@@ -3,7 +3,7 @@ name: Deploy Hexo to GitHub Pages
 on:
   push:
     branches:
-      - hexo  # 源码分支
+      - master  # 源码分支（与该仓库 master 分支一致）
 
 jobs:
   build-and-deploy:

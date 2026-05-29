@@ -25,6 +25,10 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
+# Include hidden files (e.g. .nojekyll for GitHub Pages)
+include:
+  - .nojekyll
+
 skip_render:
 
 # Writing
