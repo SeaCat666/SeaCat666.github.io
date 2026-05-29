@@ -1,0 +1,13 @@
+# Hexo generated files
+public/
+.deploy_git/
+
+# Dependencies
+node_modules/
+
+# Database
+db.json
+
+# OS files
+.DS_Store
+Thumbs.db
