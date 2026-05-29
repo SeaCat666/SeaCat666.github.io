@@ -83,3 +83,4 @@ deploy:
   type: git
   repo: https://github.com/SeaCat666/SeaCat666.github.io.git
   branch: master
+  ignore_hidden: false
