@@ -1,4 +1,6 @@
 {
-  "framework": null,
-  "buildCommand": "npx hexo generate"
+  "framework": "hexo",
+  "buildCommand": "npx hexo generate",
+  "installCommand": "npm ci",
+  "outputDirectory": "public"
 }
