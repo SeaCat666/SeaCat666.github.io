@@ -232,7 +232,7 @@ comments:
 # https://github.com/imaegoo/twikoo
 twikoo:
   # Twikoo 部署的 Vercel 域名（必填）
-  envId: https://twikoo-deepseacat-4hwtw7b23-seacat666s-projects.vercel.app
+  envId: https://twikoo-deepseacat.vercel.app
   region:
   # 评论数作为页面浏览量
   visitor: false
