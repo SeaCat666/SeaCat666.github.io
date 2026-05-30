@@ -299,7 +299,7 @@ aside:
       link: https://github.com/SeaCat666
   card_announcement:
     enable: true
-    content: 🐱 欢迎来到深海猫的博客～<br>记录编程、折腾和生活<br>愿我们彼此好在未来
+    content: 谁不是16岁小青年呢
   card_recent_post:
     enable: true
     # If set 0 will show all
