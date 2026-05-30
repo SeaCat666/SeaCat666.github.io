@@ -8,7 +8,7 @@
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
-    "deploy": "hexo deploy && node deploy.js",
+    "deploy": "hexo generate && git add -A && git commit -m 'update' && git push origin master",
     "server": "hexo server"
   },
   "hexo": {
