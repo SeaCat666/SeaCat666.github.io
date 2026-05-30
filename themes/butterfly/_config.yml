@@ -11,17 +11,19 @@
 
 nav:
   # Navigation bar logo image
-  logo:
+  logo: /img/favicon.png
   display_title: true
   display_post_title: true
   # Whether to fix navigation bar
-  fixed: false
+  fixed: true
 
 menu:
-  # Home: / || fas fa-home
-  # List||fas fa-list:
-  #   Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
+  首页: / || fas fa-home
+  时间轴: /archives/ || fas fa-archive
+  分类: /categories/ || fas fa-folder-open
+  标签: /tags/ || fas fa-tags
+  关于: /about/ || fas fa-heart
+  友链: /link/ || fas fa-link
 
 # --------------------------------------
 # Code Blocks Settings
@@ -46,8 +48,7 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
+  fab fa-github: https://github.com/SeaCat666 || Github || '#24292e'
 
 # --------------------------------------
 # Image Settings
@@ -56,17 +57,26 @@ social:
 favicon: /img/favicon.png
 
 avatar:
-  img: /img/butterfly-icon.png
+  img: https://avatars.githubusercontent.com/u/70735741?v=4
   effect: false
 
 # Disable all banner images
 disable_top_img: false
 
+# The banner image of tag page
+tag_img: /img/tags.jpg
+
+# The banner image of category page
+category_img: /img/categories.png
+
+# The banner image of archive page
+archive_img: /img/home.jpg
+
 # If the banner of page not setting, it will show the default_top_img
-default_top_img:
+default_top_img: /img/home.jpg
 
 # The banner image of index page
-index_img:
+index_img: /img/home.jpg
 
 # The banner image of archive page
 archive_img:
@@ -78,6 +88,8 @@ tag_img:
 # Format:
 #  - tag name: xxxxx
 tag_per_img:
+  butterfly: /img/butterfly-icon.png
+  hexo: /img/home.jpg
 
 # Note: category page, not categories page
 category_img:
@@ -94,6 +106,7 @@ footer_img: false
 # Can set it to color, image URL or an array containing colors and/or image URLs
 # If an array is provided, a random background will be selected from the array on each load
 background:
+  - '#f7f7f7'
 
 cover:
   # Disable the cover or not
@@ -149,7 +162,11 @@ index_top_img_height:
 
 # The subtitle on homepage
 subtitle:
-  enable: false
+  enable: true
+  sub:
+    - 愿我们彼此好在未来
+    - 一只醒在深海的猫
+    - 会早睡吗？
   # Typewriter Effect
   effect: true
   # Customize typed.js
@@ -259,7 +276,7 @@ footer:
   nav:
   owner:
     enable: true
-    since: 2025
+    since: 2020
   # Copyright of theme and framework
   copyright:
     enable: true
@@ -284,15 +301,15 @@ aside:
     category: true
   card_author:
     enable: true
-    description:
+    description: 一只醒在深海的猫
     button:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/SeaCat666
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 🐱 欢迎来到深海猫的博客～<br>记录编程、折腾和生活<br>愿我们彼此好在未来
   card_recent_post:
     enable: true
     # If set 0 will show all
@@ -301,7 +318,7 @@ aside:
     sort: date
     sort_order:
   card_newest_comments:
-    enable: false
+    enable: true
     sort_order:
     limit: 6
     # Unit: mins, save data to localStorage
@@ -318,7 +335,7 @@ aside:
     enable: true
     # If set 0 will show all
     limit: 40
-    color: false
+    color: true
     custom_colors:
     # Order of tags, random/name/length
     orderby: random
@@ -330,7 +347,7 @@ aside:
     # Type: monthly / yearly
     type: monthly
     # Eg: YYYY年MM月
-    format: MMMM YYYY
+    format: YYYY年MM月
     # Sort of order. 1, asc for ascending; -1, desc for descending
     order: -1
     # If set 0 will show all
@@ -352,7 +369,7 @@ aside:
     # Time difference between publish date and now
     # Formal: Month/Day/Year Time or Year/Month/Day Time
     # Leave it empty if you don't enable this feature
-    runtime_date:
+    runtime_date: 12/25/2020 18:56:09
 
 # --------------------------------------
 # Bottom right button
@@ -387,7 +404,7 @@ darkmode:
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
-  autoChangeMode: false
+  autoChangeMode: 1
   # Set the light mode time. The value is between 0 and 24. If not set, the default value is 6 and 18
   start:
   end:
@@ -474,8 +491,8 @@ math:
 search:
   # Choose: algolia_search / local_search / docsearch
   # leave it empty if you don't need search
-  use:
-  placeholder:
+  use: local_search
+  placeholder: 搜索文章...
 
   # Algolia Search
   algolia_search:
@@ -1011,9 +1028,9 @@ instantpage: false
 # Lazyload
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
-  enable: false
+  enable: true
   # Use browser's native lazyload instead of vanilla-lazyload
-  native: false
+  native: true
   # Specify the field to use lazyload (site or post)
   field: site
   placeholder:
