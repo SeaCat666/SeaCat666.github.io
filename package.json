@@ -8,7 +8,7 @@
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
-    "deploy": "hexo deploy",
+    "deploy": "hexo deploy && node deploy.js",
     "server": "hexo server"
   },
   "hexo": {
