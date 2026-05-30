@@ -220,12 +220,23 @@ share:
   sharejs:
     sites: facebook,x,wechat,weibo,qq
 
-# 评论 (Utterances - GitHub Issue)
+# 评论 (Twikoo)
 comments:
-  use:
+  use: Twikoo
   text: true
   lazyload: false
-  count: false
+  count: true
+  card_post_count: false
+
+# Twikoo 评论
+# https://github.com/imaegoo/twikoo
+twikoo:
+  # Twikoo 部署的 Vercel 域名（必填）
+  envId: https://twikoo-deepseacat-4hwtw7b23-seacat666s-projects.vercel.app
+  region:
+  # 评论数作为页面浏览量
+  visitor: false
+  option:
 
 # 不蒜子统计
 busuanzi:
