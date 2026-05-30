@@ -220,7 +220,7 @@ share:
   sharejs:
     sites: facebook,x,wechat,weibo,qq
 
-# 评论 (暂无)
+# 评论 (Utterances - GitHub Issue)
 comments:
   use:
   text: true
