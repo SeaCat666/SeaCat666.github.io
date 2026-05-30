@@ -1,6 +1,6 @@
 # 导航栏
 nav:
-  logo: /img/favicon.png
+  logo: /img/猫.png
   display_title: true
   display_post_title: true
   fixed: true
@@ -18,7 +18,7 @@ social:
   fab fa-github: https://github.com/SeaCat666 || Github || '#24292e'
 
 # 图标
-favicon: /img/favicon.png
+favicon: /img/猫.png
 
 # 头像
 avatar:
