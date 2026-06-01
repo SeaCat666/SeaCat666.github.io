@@ -270,10 +270,10 @@ google_analytics:
 # 站点验证（Google Search Console / Bing / Baidu / 其他）
 # 填入对应的验证字符串即可自动注入到 <head>
 site_verification:
-  google: # 填入 Google Search Console 的 verification string
-  bing: # 填入 Bing Webmaster Tools 的 verification string
-  baidu: # 填入百度站长平台的验证码或 verifyId
-  yandex: # 填入 Yandex Webmaster 的 verification string
+  # - name: google-site-verification
+  #   content: xxxxxx
+  - name: baidu-site-verification
+    content: codeva-14gaoQwRwM
 
 # PWA（指向存在的文件）
 pwa:
