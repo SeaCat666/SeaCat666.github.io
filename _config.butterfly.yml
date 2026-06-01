@@ -10,8 +10,15 @@ menu:
   时间轴: /archives/ || fas fa-archive
   分类: /categories/ || fas fa-folder-open
   标签: /tags/ || fas fa-tags
+  留言板: /guestbook/ || fas fa-comment-dots
   关于: /about/ || fas fa-heart
   友链: /link/ || fas fa-link
+  更多:
+    相册: /gallery/ || fas fa-images
+    音乐: /music/ || fas fa-music
+    影视: /movies/ || fas fa-video
+    番剧: /anime/ || fas fa-tv
+    游戏: /games/ || fas fa-gamepad
 
 # 社交
 social:
@@ -242,6 +249,9 @@ comments:
   lazyload: false
   count: true
   card_post_count: false
+  # 在每个页面的评论区显示"来发第一条留言吧"
+  # 留言板页面强制显示评论区
+  # 其他页面按需显示
 
 # Twikoo 评论
 # https://github.com/imaegoo/twikoo
