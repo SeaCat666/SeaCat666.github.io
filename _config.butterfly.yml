@@ -314,7 +314,6 @@ inject:
         }
       }
       /* 全站图片平滑加载 - 淡入过渡 */
-      /* 全站图片平滑加载 - 淡入过渡 */
       .reward-main img,
       #post img,
       .article-sort-item img,
