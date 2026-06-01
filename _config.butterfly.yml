@@ -303,16 +303,6 @@ inject:
   head:
     - |
       <style>
-      /* APlayer 手机端修复 - 歌词+收起按钮 */
-      @media screen and (max-width: 768px) {
-        .aplayer.aplayer-fixed .aplayer-lrc-contents {
-          width: auto !important;
-        }
-        .aplayer.aplayer-fixed .aplayer-lrc p {
-          font-size: 11px !important;
-          padding-right: 18px !important;
-        }
-      }
       /* 全站图片平滑加载 - 淡入过渡 */
       .reward-main img,
       #post img,
