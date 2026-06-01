@@ -316,12 +316,19 @@ inject:
           width: 28px !important;
         }
         .aplayer.aplayer-fixed .aplayer-body {
-          padding-right: 28px !important;
           max-width: none !important;
           width: 100% !important;
+          padding-right: 28px !important;
+          transition: all .3s ease;
         }
         .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
           width: 66px !important;
+          padding-right: 18px !important;
+          max-width: 66px !important;
+        }
+        .aplayer.aplayer-fixed.aplayer-narrow .aplayer-miniswitcher .aplayer-icon {
+          -webkit-transform: rotateY(0);
+          transform: rotateY(0);
         }
       }
       /* 全站图片平滑加载 - 淡入过渡 */
