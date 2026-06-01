@@ -279,7 +279,7 @@ baidu_analytics:
 google_analytics:
 
 # Microsoft Clarity（热力图、用户行为录制，免费）
-microsoft_clarity:
+microsoft_clarity: x05keoal9a
 
 # 站点验证（Google Search Console / Bing / Baidu / 其他）
 # 填入对应的验证字符串即可自动注入到 <head>
