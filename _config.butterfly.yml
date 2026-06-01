@@ -303,7 +303,7 @@ inject:
   head:
     - |
       <style>
-            /* APlayer 手机端修复 - 歌词+收起按钮 */
+      /* APlayer 手机端修复 - 歌词+收起按钮 */
       @media screen and (max-width: 768px) {
         .aplayer.aplayer-fixed .aplayer-lrc-contents {
           width: auto !important;
