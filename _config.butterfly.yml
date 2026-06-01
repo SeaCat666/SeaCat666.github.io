@@ -303,20 +303,40 @@ inject:
   head:
     - |
       <style>
-      /* 移动端 APlayer 固定播放器 - 歌词过长被左侧遮挡 */
+      /* 移动端 APlayer 固定播放器修复 - 歌词 + 收起按钮 */
       @media screen and (max-width: 768px) {
-        .aplayer.aplayer-fixed .aplayer-lic {
-          /* 保留原播放器布局，仅处理歌词文本 */
-        }
+        /* 歌词从专辑封面右侧开始，避免被左侧遮挡 */
         .aplayer.aplayer-fixed .aplayer-lrc {
-          margin-left: 70px !important;
-          padding-right: 10px !important;
+          left: 90px !important;
+          right: 20px !important;
+          bottom: 8px !important;
         }
+        /* 歌词文字自动换行 */
         .aplayer.aplayer-fixed .aplayer-lrc p {
           font-size: 12px !important;
-          line-height: 1.5 !important;
           white-space: normal !important;
           word-break: break-word !important;
+          line-height: 1.4 !important;
+        }
+        /* 收起按钮变大，更容易点击 */
+        .aplayer.aplayer-fixed .aplayer-miniswitcher {
+          width: 36px !important;
+        }
+        .aplayer.aplayer-fixed .aplayer-miniswitcher .aplayer-icon {
+          padding: 9px !important;
+          width: 100% !important;
+          height: 100% !important;
+        }
+        .aplayer.aplayer-fixed .aplayer-miniswitcher .aplayer-icon svg {
+          width: 18px !important;
+          height: 18px !important;
+        }
+        .aplayer.aplayer-fixed .aplayer-body {
+          padding-right: 36px !important;
+        }
+        /* 收起状态下，播放器本体宽度只需容纳封面 */
+        .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+          width: 66px !important;
         }
       }
       /* 全站图片平滑加载 - 淡入过渡 */
