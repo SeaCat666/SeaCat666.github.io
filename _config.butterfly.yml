@@ -422,3 +422,14 @@ CDN:
 # Toast 通知（关闭以减少额外 JS/CSS 请求）
 snackbar:
   enable: false
+
+# PJAX（页面无刷新跳转）
+pjax:
+  enable: true
+  exclude:
+    # - /music/
+
+# APlayer 全局注入（音乐播放器 CSS/JS）
+aplayerInject:
+  enable: true
+  per_page: true
