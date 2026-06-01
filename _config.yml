@@ -78,6 +78,12 @@ pagination_dir: page
 # Extensions
 theme: butterfly
 
+# Sitemap
+sitemap:
+  path:
+    - sitemap.xml
+    - sitemap.txt
+
 # Deployment
 deploy:
   type: git

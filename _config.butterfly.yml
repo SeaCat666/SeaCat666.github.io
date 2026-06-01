@@ -259,6 +259,22 @@ busuanzi:
   site_pv: true
   page_pv: true
 
+# ======== SEO 相关配置 ========
+
+# 百度统计（https://tongji.baidu.com）
+baidu_analytics:
+
+# Google Analytics（https://analytics.google.com）
+google_analytics:
+
+# 站点验证（Google Search Console / Bing / Baidu / 其他）
+# 填入对应的验证字符串即可自动注入到 <head>
+site_verification:
+  google: # 填入 Google Search Console 的 verification string
+  bing: # 填入 Bing Webmaster Tools 的 verification string
+  baidu: # 填入百度站长平台的验证码或 verifyId
+  yandex: # 填入 Yandex Webmaster 的 verification string
+
 # PWA（指向存在的文件）
 pwa:
   enable: false

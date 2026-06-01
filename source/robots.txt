@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /page/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /img/
+
+Sitemap: https://www.deepseacat.cn/sitemap.xml
