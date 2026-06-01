@@ -91,7 +91,8 @@ subtitle:
     - 愿我们彼此好在未来
     - 一只醒在深海的猫
     - 会早睡吗？
-  effect: false
+  # 打字特效（逐字显示副标题）
+  effect: true
   source: false
 
 index_layout: 3
@@ -277,6 +278,9 @@ baidu_analytics:
 # Google Analytics（https://analytics.google.com）
 google_analytics:
 
+# Microsoft Clarity（热力图、用户行为录制，免费）
+microsoft_clarity:
+
 # 站点验证（Google Search Console / Bing / Baidu / 其他）
 # 填入对应的验证字符串即可自动注入到 <head>
 site_verification:
@@ -331,6 +335,57 @@ inject:
       </style>
   bottom:
     - <div class="aplayer no-destroy" data-id="2013698413" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false" data-order="random" data-volume="0.7" data-mutex="true" data-theme="#49B1F5"></div>
+    - |
+      <script>
+      // 访问者 IP 与城市显示
+      (() => {
+        const cardWebinfo = document.querySelector('.card-webinfo')
+        if (!cardWebinfo) return
+        const container = cardWebinfo.querySelector('.webinfo') || cardWebinfo
+        const ipItem = document.createElement('div')
+        ipItem.className = 'webinfo-item'
+        ipItem.innerHTML = '<div class="item-name">🖥 你的位置 :</div><div class="item-count" id="visitor-location"><i class="fa-solid fa-spinner fa-spin"></i></div>'
+        container.appendChild(ipItem)
+        fetch('https://ip-api.com/json/?lang=zh-CN&fields=query,city,regionName,country,isp')
+          .then(r => r.json())
+          .then(d => {
+            const loc = document.getElementById('visitor-location')
+            if (d && d.city) {
+              loc.innerHTML = `${d.country} · ${d.city}`
+            } else {
+              loc.innerHTML = '未知'
+            }
+          })
+          .catch(() => {
+            document.getElementById('visitor-location').innerHTML = '未知'
+          })
+      })()
+      // 文章点赞
+      ;(() => {
+        const addLikeBtn = () => {
+          const article = document.querySelector('#post')
+          if (!article || article.querySelector('.post-like-btn')) return
+          const footer = article.querySelector('.post-copyright') || article.querySelector('.tag_share')
+          if (!footer) return
+          const postKey = window.location.pathname.replace(/\/$/, '')
+          const liked = localStorage.getItem('liked_' + postKey)
+          const btn = document.createElement('div')
+          btn.className = 'post-like-btn'
+          btn.style.cssText = 'text-align:center;margin:20px 0;font-size:1em'
+          btn.innerHTML = liked
+            ? '<span style="color:#49B1F5;font-size:1.5rem">❤️</span><br><span style="color:#999">已点赞</span>'
+            : '<button onclick="window.likePost(this)" style="background:#49B1F5;color:#fff;border:none;padding:10px 30px;border-radius:30px;cursor:pointer;font-size:1.1rem;transition:all .3s">❤️ 点赞这篇文章</button>'
+          footer.parentNode.insertBefore(btn, footer.nextSibling)
+        }
+        window.likePost = function(btn) {
+          const postKey = window.location.pathname.replace(/\/$/, '')
+          localStorage.setItem('liked_' + postKey, '1')
+          btn.closest('.post-like-btn').innerHTML = '<span style="color:#49B1F5;font-size:1.5rem">❤️</span><br><span style="color:#999">已点赞</span>'
+        }
+        window.addEventListener('load', addLikeBtn)
+        window.pjax && document.addEventListener('pjax:complete', addLikeBtn)
+      })()
+      </script>
 
 # 其他
 rounded_corners_ui: true
@@ -344,8 +399,11 @@ hr_icon:
   icon: '\f0c5'
   icon_top: '\f0c5'
 lazyload:
-  enable: false
+  enable: true
+  native: true
   field: site
+  placeholder:
+  blur: false
 Open_Graph_meta:
   enable: true
   option:
@@ -392,29 +450,42 @@ rightside_bottom: 100px
 
 # ======== 性能优化配置 ========
 
-# 加载动画（关闭以减少白屏等待）
+# 加载动画（开启后页面加载时有 loading 效果）
 preloader:
-  enable: false
+  enable: true
+  source: 1
 
-# 打字特效
+# 打字特效（输入时屏幕震动效果）
 activate_power_mode:
   enable: false
 
-# 背景特效 - 全部关闭以提升加载速度
+# 背景特效 - 粒子网络背景（蓝色系，配合主题色）
 canvas_ribbon:
   enable: false
 canvas_fluttering_ribbon:
   enable: false
 canvas_nest:
-  enable: false
+  enable: true
+  color: '73,177,245'
+  opacity: 0.5
+  zIndex: -1
+  count: 99
 
 # 鼠标点击特效
 fireworks:
   enable: false
 click_heart:
-  enable: false
+  enable: true
+  mobile: true
 clickShowText:
-  enable: false
+  enable: true
+  text:
+    - ❤️
+    - 🐱
+    - 加油
+  fontSize: 20px
+  random: true
+  mobile: true
 
 # 文章美化（保留）
 beautify:
