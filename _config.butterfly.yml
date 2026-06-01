@@ -22,21 +22,21 @@ favicon: /img/favicon.ico
 
 # 头像
 avatar:
-  img: /img/avatar.jpg
+  img: /img/avatar.webp
   effect: false
 
 # 背景图
 disable_top_img: false
-tag_img: /img/tags.jpg
-category_img: /img/categories.png
-archive_img: /img/home.jpg
-default_top_img: /img/home.jpg
-index_img: /img/home.jpg
+tag_img: /img/tags.webp
+category_img: /img/categories.webp
+archive_img: /img/home.webp
+default_top_img: /img/home.webp
+index_img: /img/home.webp
 
 # 各标签背景
 tag_per_img:
   butterfly: /img/butterfly-icon.png
-  hexo: /img/home.jpg
+  hexo: /img/home.webp
 
 # 页脚背景
 footer_img: false
@@ -54,7 +54,7 @@ cover:
 # 错误图片
 error_img:
   flink: /img/friend_404.gif
-  post_page: /img/404.jpg
+  post_page: /img/404.webp
 
 # 404
 error_404:
@@ -116,10 +116,10 @@ reward:
   enable: true
   text: 老板大气！
   QR_code:
-    - img: /img/wxskm.jpg
+    - img: /img/wxskm.webp
       link:
       text: 微信
-    - img: /img/zfbskm.jpg
+    - img: /img/zfbskm.webp
       link:
       text: 支付宝
 
@@ -286,7 +286,7 @@ Open_Graph_meta:
   enable: true
   option:
     twitter_card: summary_large_image
-    twitter_image: /img/home.jpg
+    twitter_image: /img/home.webp
 
 # 分类/标签页 UI 样式（index = 卡片首页风格）
 category_ui: index
