@@ -140,7 +140,7 @@
   algolia: undefined,
   localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
   translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
-  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":300,"highlightFullpage":false,"highlightMacStyle":true},
   copy: {
     success: '复制成功',
     error: '复制失败',
@@ -864,7 +864,7 @@ document.body.addEventListener('input', POWERMODE);
 
   document.addEventListener('pjax:error', e => {
     if (e.request.status === 404) {
-      false
+      true
         ? pjax.loadUrl('/404.html')
         : window.location.href = e.request.responseURL
     }
