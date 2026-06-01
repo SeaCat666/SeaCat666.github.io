@@ -22,8 +22,7 @@ favicon: /img/favicon.ico
 
 # 头像
 avatar:
-  img: /img/猫.png
-  effect: false
+  img: /img/tx.jpg
 
 # 背景图
 disable_top_img: false
