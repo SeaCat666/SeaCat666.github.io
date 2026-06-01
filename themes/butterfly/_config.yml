@@ -11,7 +11,7 @@
 
 nav:
   # Navigation bar logo image
-  logo: /img/猫.png
+  logo: /img/猫.webp
   display_title: true
   display_post_title: true
   # Whether to fix navigation bar
@@ -54,7 +54,7 @@ social:
 # Image Settings
 # --------------------------------------
 
-favicon: /img/猫.png
+favicon: /img/猫.webp
 
 avatar:
   img: /img/avatar.jpg
@@ -1033,11 +1033,11 @@ lazyload:
 # ---------------
 pwa:
   enable: true
-  manifest: /img/favicon.png
-  apple_touch_icon: /img/猫.png
-  favicon_32_32: /img/favicon.png
-  favicon_16_16: /img/favicon.png
-  mask_icon: /img/favicon.png
+  manifest: /img/favicon.webp
+  apple_touch_icon: /img/猫.webp
+  favicon_32_32: /img/favicon.webp
+  favicon_16_16: /img/favicon.webp
+  mask_icon: /img/favicon.webp
 
 # Open graph meta tags
 # https://hexo.io/docs/helpers#open-graph
