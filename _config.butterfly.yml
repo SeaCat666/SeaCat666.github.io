@@ -110,6 +110,18 @@ post_copyright:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
+# 打赏
+reward:
+  enable: true
+  text: 老板大气！
+  QR_code:
+    - img: /img/wxskm.jpg
+      link:
+      text: 微信
+    - img: /img/zfbskm.jpg
+      link:
+      text: 支付宝
+
 # 相关文章
 related_post:
   enable: true
