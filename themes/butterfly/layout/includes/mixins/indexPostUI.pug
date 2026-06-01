@@ -18,7 +18,7 @@ mixin indexPostUI()
                   img.post-bg(src=url_for(postCover) onerror=`this.onerror=null;this.src='${url_for(theme.error_img.post_page)}'` alt=title)
                 else
                   div.post-bg(style=`background: ${postCover}`)
-          .recent-post-info(class=noCover)
+          .recent-post-info(class=noCover onclick=`if(!event.target.closest('a')){pjax?pjax.loadUrl("${url_for(link)}"):location.href="${url_for(link)}"}`)
             a.article-title(href=url_for(link) title=title)
               if globalPageType === 'home' && (article.top || article.sticky > 0)
                 i.fas.fa-thumbtack.sticky
