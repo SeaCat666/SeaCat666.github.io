@@ -277,10 +277,8 @@ hr_icon:
   icon: '\f0c5'
   icon_top: '\f0c5'
 lazyload:
-  enable: true
-  native: true
+  enable: false
   field: site
-  blur: true
 Open_Graph_meta:
   enable: true
   option:
