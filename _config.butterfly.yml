@@ -115,10 +115,10 @@ reward:
   enable: true
   text: 老板大气！
   QR_code:
-    - img: /img/wxskm.webp
+    - img: /img/wxskm.jpg
       link:
       text: 微信
-    - img: /img/zfbskm.webp
+    - img: /img/zfbskm.jpg
       link:
       text: 支付宝
 
@@ -262,6 +262,27 @@ busuanzi:
 # 代码注入
 inject:
   head:
+    - |
+      <style>
+      #reward .reward-main .reward-all .reward-item img {
+        border-radius: 12px !important;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.12) !important;
+        transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+      }
+      #reward .reward-main .reward-all .reward-item img:hover {
+        transform: scale(1.05) !important;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.18) !important;
+      }
+      @keyframes rewardFadeIn {
+        from { opacity: 0; transform: scale(0.9) translateY(10px); }
+        to   { opacity: 1; transform: scale(1) translateY(0); }
+      }
+      #reward .reward-main .reward-all .reward-item {
+        animation: rewardFadeIn 0.35s ease-out both !important;
+      }
+      #reward .reward-main .reward-all .reward-item:nth-child(1) { animation-delay: 0.05s; }
+      #reward .reward-main .reward-all .reward-item:nth-child(2) { animation-delay: 0.15s; }
+      </style>
   bottom:
     - <div class="aplayer no-destroy" data-id="2013698413" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false" data-order="random" data-volume="0.7" data-mutex="true" data-theme="#49B1F5"></div>
 
