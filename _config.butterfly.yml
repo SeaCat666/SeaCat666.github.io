@@ -35,7 +35,7 @@ index_img: /img/home.webp
 
 # 各标签背景
 tag_per_img:
-  butterfly: /img/butterfly-icon.png
+  butterfly: /img/butterfly-icon.webp
   hexo: /img/home.webp
 
 # 页脚背景

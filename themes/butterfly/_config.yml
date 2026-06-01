@@ -82,7 +82,7 @@ index_img: /img/home.webp
 # Format:
 #  - tag name: xxxxx
 tag_per_img:
-  butterfly: /img/butterfly-icon.png
+  butterfly: /img/butterfly-icon.webp
   hexo: /img/home.webp
 
 # The banner image of category page, you can set the banner image for each category
