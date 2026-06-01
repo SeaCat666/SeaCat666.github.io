@@ -259,11 +259,31 @@ busuanzi:
   site_pv: true
   page_pv: true
 
+# PWA（指向存在的文件）
+pwa:
+  enable: false
+  manifest: /img/favicon.png
+  apple_touch_icon: /img/猫.png
+  favicon_32_32: /img/favicon.png
+  favicon_16_16: /img/favicon.png
+  mask_icon: /img/favicon.png
+
 # 代码注入
 inject:
   head:
     - |
       <style>
+      /* 全站图片平滑加载 - 淡入过渡 */
+      .reward-main img,
+      #post img,
+      .article-sort-item img,
+      .tag-cloud a img,
+      #recent-posts img,
+      #page img {
+        filter: none !important;
+        transition: opacity 0.4s ease, transform 0.3s ease !important;
+      }
+      /* 打赏二维码样式 */
       #reward .reward-main .reward-all .reward-item img {
         border-radius: 12px !important;
         box-shadow: 0 4px 20px rgba(0,0,0,0.12) !important;
