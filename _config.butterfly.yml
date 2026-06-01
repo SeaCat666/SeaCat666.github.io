@@ -85,7 +85,7 @@ subtitle:
     - 愿我们彼此好在未来
     - 一只醒在深海的猫
     - 会早睡吗？
-  effect: true
+  effect: false
   source: false
 
 index_layout: 3
@@ -325,3 +325,46 @@ category_per_img:
 
 # 右下角按钮位置
 rightside_bottom: 100px
+
+# ======== 性能优化配置 ========
+
+# 加载动画（关闭以减少白屏等待）
+preloader:
+  enable: false
+
+# 打字特效
+activate_power_mode:
+  enable: false
+
+# 背景特效 - 全部关闭以提升加载速度
+canvas_ribbon:
+  enable: false
+canvas_fluttering_ribbon:
+  enable: false
+canvas_nest:
+  enable: false
+
+# 鼠标点击特效
+fireworks:
+  enable: false
+click_heart:
+  enable: false
+clickShowText:
+  enable: false
+
+# 文章美化（保留）
+beautify:
+  enable: true
+  field: post
+  title_prefix_icon: '\f0f6'
+  title_prefix_icon_color: '#49B1F5'
+
+# CDN 配置（所有资源本地加载，避免 jsDelivr 国内被屏蔽）
+CDN:
+  internal_provider: local
+  third_party_provider: local
+  version: true
+
+# Toast 通知（关闭以减少额外 JS/CSS 请求）
+snackbar:
+  enable: false
