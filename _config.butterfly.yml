@@ -47,9 +47,9 @@ background:
 
 # 封面
 cover:
-  index_enable: true
-  aside_enable: true
-  archives_enable: true
+  index_enable: false
+  aside_enable: false
+  archives_enable: false
 
 # 错误图片
 error_img:
@@ -107,6 +107,7 @@ toc:
 post_copyright:
   enable: true
   decode: false
+  author_href: https://github.com/SeaCat666
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
@@ -138,7 +139,7 @@ footer:
   copyright:
     enable: true
     version: true
-  custom_text:
+  custom_text: 🐱 深海猫的私人领地 — 愿我们彼此好在未来
 
 # 侧边栏
 aside:
@@ -225,6 +226,9 @@ readmode: true
 search:
   use: local_search
   placeholder: 搜索文章...
+  local_search:
+    preload: true
+    unescape: true
 
 # 分享
 share:
@@ -247,7 +251,7 @@ twikoo:
   envId: https://twikoo-deepseacat.vercel.app
   region:
   # 评论数作为页面浏览量
-  visitor: false
+  visitor: true
   option:
 
 # 不蒜子统计
@@ -271,9 +275,53 @@ enter_transitions: true
 display_mode: light
 hr_icon:
   enable: true
+  icon: '\f0c5'
+  icon_top: '\f0c5'
 lazyload:
   enable: true
   native: true
   field: site
+  blur: true
 Open_Graph_meta:
   enable: true
+  option:
+    twitter_card: summary_large_image
+    twitter_image: /img/home.jpg
+
+# 分类/标签页 UI 样式（index = 卡片首页风格）
+category_ui: index
+tag_ui: index
+
+# URL 锚点自动更新
+anchor:
+  auto_update: true
+  click_to_scroll: true
+
+# 图片 figcaption
+photofigcaption: true
+
+# 两端对齐
+text_align_justify: true
+
+# 数学公式（KaTeX）
+math:
+  use: katex
+  per_page: true
+  hide_scrollbar: false
+  katex:
+    copy_tex: true
+
+# ABC 音乐符号
+abcjs:
+  enable: true
+  per_page: true
+
+# 首页头像区域高度
+# index_site_info_top: 300px
+# index_top_img_height: 600px
+
+# 分类页独立背景图（可后续添加各分类图片）
+category_per_img:
+
+# 右下角按钮位置
+rightside_bottom: 100px
