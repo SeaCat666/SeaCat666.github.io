@@ -4,6 +4,7 @@ date: 2020-12-27 02:17:51
 tags:
   - 随笔
   - yilia
+permalink: /yilia-theme-story/
 ---
 
 ## 我用yilia主题的起因

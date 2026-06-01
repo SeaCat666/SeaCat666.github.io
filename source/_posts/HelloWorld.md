@@ -4,6 +4,7 @@ date: 2020-12-25 18:56:09
 tags:
   - 随笔
   - Hello World
+permalink: /hello-world/
 ---
 
 ## 用vscode写md文件的博客文章

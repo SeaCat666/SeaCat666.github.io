@@ -5,6 +5,7 @@ tags:
   - butterfly
   - hexo
   - git
+permalink: /blog-theme-update/
 ---
 
 博客主题从 Yilia 更新到 Butterfly。
