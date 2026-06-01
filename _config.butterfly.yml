@@ -1,6 +1,6 @@
 # 导航栏
 nav:
-  logo: /img/猫.png
+  logo: /img/猫.webp
   display_title: true
   display_post_title: true
   fixed: true
