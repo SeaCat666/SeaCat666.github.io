@@ -17,7 +17,6 @@ menu:
     相册: /gallery/ || fas fa-images
     音乐: /music/ || fas fa-music
     影视: /movies/ || fas fa-video
-    番剧: /anime/ || fas fa-tv
     游戏: /games/ || fas fa-gamepad
 
 # 社交

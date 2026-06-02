@@ -6,14 +6,26 @@ comments: true
 ---
 
 <style>
-.game-rank { margin-bottom: 30px; }
-.game-rank table { width: 100%; border-collapse: collapse; }
-.game-rank th, .game-rank td { padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--hr-border, #333); }
-.game-rank .rank-num { width: 40px; text-align: center; font-weight: bold; color: var(--theme-color, #49B1F5); }
-.game-rank .game-name { font-weight: 500; }
-.game-rank .game-hours { color: var(--second-text, #888); font-size: 13px; }
-.game-rank .game-rating { color: #f0c040; }
-.game-rank .game-comment { color: var(--second-text, #888); font-size: 13px; }
+.game-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 30px; }
+.game-item {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 10px 12px;
+  background: var(--card-bg, #f8f9fa);
+  border-radius: 8px;
+  border: 1px solid var(--hr-border, #eee);
+  line-height: 1.5;
+}
+.game-item .game-rank-num {
+  flex-shrink: 0; width: 28px; height: 28px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 6px; font-size: 13px; font-weight: 700; color: #fff;
+  background: var(--theme-color, #49B1F5);
+}
+.game-item .game-body { flex: 1; min-width: 0; }
+.game-item .game-title { font-weight: 600; font-size: 14px; }
+.game-item .game-meta { font-size: 12px; color: var(--second-text, #888); margin-top: 2px; }
+.game-item .game-comment { font-size: 13px; color: var(--text-prew, #555); margin-top: 4px; font-style: italic; }
+.game-item .game-rating { flex-shrink: 0; font-size: 13px; color: #f0c040; }
 .steam-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; margin-bottom: 20px; }
 .steam-card { border-radius: 8px; overflow: hidden; background: var(--card-bg, #2a2a2a); transition: transform 0.2s; }
 .steam-card:hover { transform: translateY(-3px); }
@@ -22,26 +34,117 @@ comments: true
 .steam-info { padding: 6px 10px; display: flex; justify-content: space-between; align-items: center; }
 .steam-name { font-size: 13px; font-weight: 500; }
 .steam-hours { font-size: 11px; opacity: 0.6; }
+@media (prefers-color-scheme: dark) {
+  .game-item { background: var(--card-bg, #2a2a2a); border-color: var(--hr-border, #333); }
+  .game-item .game-comment { color: var(--second-text, #aaa); }
+}
 </style>
 
 ## 🎮 游戏记录
 
 ### ⭐ 我最喜爱的游戏
 
-<div class="game-rank">
+<div class="game-list">
 
-| # | 游戏名 | 时长 | 评分 | 评价 |
-|:-:|:------|:---:|:----:|:-----|
-| 1 | （等你来填） | - | ⭐⭐⭐⭐⭐ | - |
-| 2 | （等你来填） | - | ⭐⭐⭐⭐⭐ | - |
-| 3 | （等你来填） | - | ⭐⭐⭐⭐⭐ | - |
-| 4 | （等你来填） | - | ⭐⭐⭐⭐⭐ | - |
-| 5 | （等你来填） | - | ⭐⭐⭐⭐⭐ | - |
-| 6 | （等你来填） | - | ⭐⭐⭐⭐⭐ | - |
-| 7 | （等你来填） | - | ⭐⭐⭐⭐⭐ | - |
-| 8 | （等你来填） | - | ⭐⭐⭐⭐⭐ | - |
-| 9 | （等你来填） | - | ⭐⭐⭐⭐⭐ | - |
-| 10 | （等你来填） | - | ⭐⭐⭐⭐⭐ | - |
+<div class="game-item">
+  <div class="game-rank-num">1</div>
+  <div class="game-body">
+    <div class="game-title">等你来填</div>
+    <div class="game-meta">等你来填时长</div>
+    <div class="game-comment">等你来写短评</div>
+  </div>
+  <div class="game-rating">⭐⭐⭐⭐⭐</div>
+</div>
+
+<div class="game-item">
+  <div class="game-rank-num">2</div>
+  <div class="game-body">
+    <div class="game-title">等你来填</div>
+    <div class="game-meta">等你来填时长</div>
+    <div class="game-comment">等你来写短评</div>
+  </div>
+  <div class="game-rating">⭐⭐⭐⭐⭐</div>
+</div>
+
+<div class="game-item">
+  <div class="game-rank-num">3</div>
+  <div class="game-body">
+    <div class="game-title">等你来填</div>
+    <div class="game-meta">等你来填时长</div>
+    <div class="game-comment">等你来写短评</div>
+  </div>
+  <div class="game-rating">⭐⭐⭐⭐⭐</div>
+</div>
+
+<div class="game-item">
+  <div class="game-rank-num">4</div>
+  <div class="game-body">
+    <div class="game-title">等你来填</div>
+    <div class="game-meta">等你来填时长</div>
+    <div class="game-comment">等你来写短评</div>
+  </div>
+  <div class="game-rating">⭐⭐⭐⭐⭐</div>
+</div>
+
+<div class="game-item">
+  <div class="game-rank-num">5</div>
+  <div class="game-body">
+    <div class="game-title">等你来填</div>
+    <div class="game-meta">等你来填时长</div>
+    <div class="game-comment">等你来写短评</div>
+  </div>
+  <div class="game-rating">⭐⭐⭐⭐⭐</div>
+</div>
+
+<div class="game-item">
+  <div class="game-rank-num">6</div>
+  <div class="game-body">
+    <div class="game-title">等你来填</div>
+    <div class="game-meta">等你来填时长</div>
+    <div class="game-comment">等你来写短评</div>
+  </div>
+  <div class="game-rating">⭐⭐⭐⭐⭐</div>
+</div>
+
+<div class="game-item">
+  <div class="game-rank-num">7</div>
+  <div class="game-body">
+    <div class="game-title">等你来填</div>
+    <div class="game-meta">等你来填时长</div>
+    <div class="game-comment">等你来写短评</div>
+  </div>
+  <div class="game-rating">⭐⭐⭐⭐⭐</div>
+</div>
+
+<div class="game-item">
+  <div class="game-rank-num">8</div>
+  <div class="game-body">
+    <div class="game-title">等你来填</div>
+    <div class="game-meta">等你来填时长</div>
+    <div class="game-comment">等你来写短评</div>
+  </div>
+  <div class="game-rating">⭐⭐⭐⭐⭐</div>
+</div>
+
+<div class="game-item">
+  <div class="game-rank-num">9</div>
+  <div class="game-body">
+    <div class="game-title">等你来填</div>
+    <div class="game-meta">等你来填时长</div>
+    <div class="game-comment">等你来写短评</div>
+  </div>
+  <div class="game-rating">⭐⭐⭐⭐⭐</div>
+</div>
+
+<div class="game-item">
+  <div class="game-rank-num">10</div>
+  <div class="game-body">
+    <div class="game-title">等你来填</div>
+    <div class="game-meta">等你来填时长</div>
+    <div class="game-comment">等你来写短评</div>
+  </div>
+  <div class="game-rating">⭐⭐⭐⭐⭐</div>
+</div>
 
 </div>
 
