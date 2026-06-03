@@ -49,9 +49,9 @@ comments: true
 <div class="game-item">
   <div class="game-rank-num">1</div>
   <div class="game-body">
-    <div class="game-title">等你来填</div>
-    <div class="game-meta">等你来填时长</div>
-    <div class="game-comment">等你来写短评</div>
+    <div class="game-title">我的世界 · Minecraft</div>
+    <div class="game-meta">2015年至今</div>
+    <div class="game-comment">很多人不懂像素沙盒为什么好玩——Minecraft 的乐趣全靠想象力。装Java、搭服、写插件做mod，这些门槛反而是IT启蒙。我也是，初中想手撕MC的源码，从此开始自学编程。</div>
   </div>
   <div class="game-rating">⭐⭐⭐⭐⭐</div>
 </div>
@@ -59,9 +59,9 @@ comments: true
 <div class="game-item">
   <div class="game-rank-num">2</div>
   <div class="game-body">
-    <div class="game-title">等你来填</div>
-    <div class="game-meta">等你来填时长</div>
-    <div class="game-comment">等你来写短评</div>
+    <div class="game-title">黎明杀机 · Dead by Daylight</div>
+    <div class="game-meta">2000h+</div>
+    <div class="game-comment">追逐与杀戮的极致体验。因过于暴力血腥无法在国内正常宣传，被第五人格抄袭后补票买版权，热度早已被抢光。2026年2月23日达成全角色全技能，堪比破解版。</div>
   </div>
   <div class="game-rating">⭐⭐⭐⭐⭐</div>
 </div>
@@ -69,28 +69,28 @@ comments: true
 <div class="game-item">
   <div class="game-rank-num">3</div>
   <div class="game-body">
-    <div class="game-title">等你来填</div>
-    <div class="game-meta">等你来填时长</div>
-    <div class="game-comment">等你来写短评</div>
+    <div class="game-title">像素生存者 2 · Pixel Survival Game 2</div>
+    <div class="game-meta">2016年至今</div>
+    <div class="game-comment">小学被朋友带入坑，一款极其简陋的ARPG，组队刷副本做装备。说不出为什么就是喜欢。氪金约3500元，其他游戏没有一款超过1000。4.5分扣在实在太简陋。</div>
   </div>
-  <div class="game-rating">⭐⭐⭐⭐⭐</div>
+  <div class="game-rating">⭐⭐⭐⭐½</div>
 </div>
 
 <div class="game-item">
   <div class="game-rank-num">4</div>
   <div class="game-body">
-    <div class="game-title">等你来填</div>
-    <div class="game-meta">等你来填时长</div>
-    <div class="game-comment">等你来写短评</div>
+    <div class="game-title">鹅鸭杀 · Goose Goose Duck</div>
+    <div class="game-meta">300h+</div>
+    <div class="game-comment">激情推理。最早爱玩的是 Among Us 太空狼人杀，可惜不照顾中国玩家，被鹅鸭杀取而代之。300小时里230小时是连续肝的，数不清多少通宵。</div>
   </div>
-  <div class="game-rating">⭐⭐⭐⭐⭐</div>
+  <div class="game-rating">⭐⭐⭐⭐½</div>
 </div>
 
 <div class="game-item">
   <div class="game-rank-num">5</div>
   <div class="game-body">
-    <div class="game-title">等你来填</div>
-    <div class="game-meta">等你来填时长</div>
+    <div class="game-title">泰拉瑞亚 · Terraria</div>
+    <div class="game-meta">等你来填</div>
     <div class="game-comment">等你来写短评</div>
   </div>
   <div class="game-rating">⭐⭐⭐⭐⭐</div>
@@ -99,8 +99,8 @@ comments: true
 <div class="game-item">
   <div class="game-rank-num">6</div>
   <div class="game-body">
-    <div class="game-title">等你来填</div>
-    <div class="game-meta">等你来填时长</div>
+    <div class="game-title">反恐精英 2 · Counter-Strike 2</div>
+    <div class="game-meta">等你来填</div>
     <div class="game-comment">等你来写短评</div>
   </div>
   <div class="game-rating">⭐⭐⭐⭐⭐</div>
@@ -109,8 +109,8 @@ comments: true
 <div class="game-item">
   <div class="game-rank-num">7</div>
   <div class="game-body">
-    <div class="game-title">等你来填</div>
-    <div class="game-meta">等你来填时长</div>
+    <div class="game-title">Apex 英雄 · Apex Legends</div>
+    <div class="game-meta">等你来填</div>
     <div class="game-comment">等你来写短评</div>
   </div>
   <div class="game-rating">⭐⭐⭐⭐⭐</div>
@@ -119,8 +119,8 @@ comments: true
 <div class="game-item">
   <div class="game-rank-num">8</div>
   <div class="game-body">
-    <div class="game-title">等你来填</div>
-    <div class="game-meta">等你来填时长</div>
+    <div class="game-title">炉石传说：酒馆战棋 · Hearthstone Battlegrounds</div>
+    <div class="game-meta">等你来填</div>
     <div class="game-comment">等你来写短评</div>
   </div>
   <div class="game-rating">⭐⭐⭐⭐⭐</div>
@@ -129,8 +129,8 @@ comments: true
 <div class="game-item">
   <div class="game-rank-num">9</div>
   <div class="game-body">
-    <div class="game-title">等你来填</div>
-    <div class="game-meta">等你来填时长</div>
+    <div class="game-title">黑神话：悟空 · Black Myth: Wukong</div>
+    <div class="game-meta">等你来填</div>
     <div class="game-comment">等你来写短评</div>
   </div>
   <div class="game-rating">⭐⭐⭐⭐⭐</div>
@@ -139,8 +139,8 @@ comments: true
 <div class="game-item">
   <div class="game-rank-num">10</div>
   <div class="game-body">
-    <div class="game-title">等你来填</div>
-    <div class="game-meta">等你来填时长</div>
+    <div class="game-title">部落冲突 · Clash of Clans</div>
+    <div class="game-meta">等你来填</div>
     <div class="game-comment">等你来写短评</div>
   </div>
   <div class="game-rating">⭐⭐⭐⭐⭐</div>
