@@ -90,8 +90,8 @@ comments: true
   <div class="game-rank-num">5</div>
   <div class="game-body">
     <div class="game-title">泰拉瑞亚 · Terraria</div>
-    <div class="game-meta">等你来填</div>
-    <div class="game-comment">等你来写短评</div>
+    <div class="game-meta">400h+</div>
+    <div class="game-comment">2D横板像素劝退不少人，常被说看不懂。无需解释，通宵挖矿肝疼过自然懂。</div>
   </div>
   <div class="game-rating">⭐⭐⭐⭐⭐</div>
 </div>
@@ -100,8 +100,8 @@ comments: true
   <div class="game-rank-num">6</div>
   <div class="game-body">
     <div class="game-title">反恐精英 2 · Counter-Strike 2</div>
-    <div class="game-meta">等你来填</div>
-    <div class="game-comment">等你来写短评</div>
+    <div class="game-meta">900h+</div>
+    <div class="game-comment">最纯粹的FPS，没有技能没有大招，30分钟肾上腺素拉满。不碰瓦。</div>
   </div>
   <div class="game-rating">⭐⭐⭐⭐⭐</div>
 </div>
@@ -110,8 +110,8 @@ comments: true
   <div class="game-rank-num">7</div>
   <div class="game-body">
     <div class="game-title">Apex 英雄 · Apex Legends</div>
-    <div class="game-meta">等你来填</div>
-    <div class="game-comment">等你来写短评</div>
+    <div class="game-meta">375h+</div>
+    <div class="game-comment">论打击感，没有对手。TTK长，枪法说话。</div>
   </div>
   <div class="game-rating">⭐⭐⭐⭐⭐</div>
 </div>
@@ -120,8 +120,8 @@ comments: true
   <div class="game-rank-num">8</div>
   <div class="game-body">
     <div class="game-title">炉石传说：酒馆战棋 · Hearthstone Battlegrounds</div>
-    <div class="game-meta">等你来填</div>
-    <div class="game-comment">等你来写短评</div>
+    <div class="game-meta">800h+</div>
+    <div class="game-comment">自走棋里最对味的一款。比金铲铲更像麻将，凑三连的快感无与伦比。800h+，还在酒馆里坐着。</div>
   </div>
   <div class="game-rating">⭐⭐⭐⭐⭐</div>
 </div>
@@ -130,18 +130,18 @@ comments: true
   <div class="game-rank-num">9</div>
   <div class="game-body">
     <div class="game-title">黑神话：悟空 · Black Myth: Wukong</div>
-    <div class="game-meta">等你来填</div>
-    <div class="game-comment">等你来写短评</div>
+    <div class="game-meta">200h+</div>
+    <div class="game-comment">瑕不掩瑜，但瑕有点多。国产最强不假，半成品也不假。六周目200h，希望游科把坑填完。</div>
   </div>
-  <div class="game-rating">⭐⭐⭐⭐⭐</div>
+  <div class="game-rating">⭐⭐⭐⭐</div>
 </div>
 
 <div class="game-item">
   <div class="game-rank-num">10</div>
   <div class="game-body">
     <div class="game-title">部落冲突 · Clash of Clans</div>
-    <div class="game-meta">等你来填</div>
-    <div class="game-comment">等你来写短评</div>
+    <div class="game-meta">初中时期</div>
+    <div class="game-comment">纯粹的情怀位。初中时光，每天上线收资源打部落战，简单的快乐。</div>
   </div>
   <div class="game-rating">⭐⭐⭐⭐⭐</div>
 </div>
