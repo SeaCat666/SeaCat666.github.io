@@ -139,9 +139,26 @@ comments: true
 
 <div class="movie-item">
   <div class="movie-badge movie">🎬</div>
-  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BZDU1YTg5OWEtNTRkNy00ZWQ2LWI4M2ItZWE1OGFhZmM0M2ExXkEyXkFqcGc@._V1_SX300.jpg" alt="菊次郎的夏天" loading="lazy">
+  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BZWM0OWVmNTEtNWVkOS00MzgyLTkyMzgtMmE2ZTZiNjY4MmFiXkEyXkFqcGc@._V1_SX300.jpg" alt="蜘蛛侠" loading="lazy">
   <div class="movie-body">
-    <div class="movie-title">菊次郎的夏天</div>
+    <div class="movie-title">蜘蛛侠</div>
+    <div class="movie-meta">托比版 1-3部</div>
+  </div>
+</div>
+
+<div class="movie-item">
+  <div class="movie-badge movie">🎬</div>
+  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BZjE1ZWFmMjItNDE5Yy00OTEyLWIxMjQtMmU0MDYzMjU4NjMzXkEyXkFqcGc@._V1_SX300.jpg" alt="放牛班的春天" loading="lazy">
+  <div class="movie-body">
+    <div class="movie-title">放牛班的春天</div>
+  </div>
+</div>
+
+<div class="movie-item">
+  <div class="movie-badge movie">🎬</div>
+  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BYzJkNmZiMDEtNjg2Yi00ZDljLWJjZGQtZGFiMTExZjMyMTljXkEyXkFqcGdeQXVyMjQ0NzE0MQ@@._V1_SX300.jpg" alt="心灵捕手" loading="lazy">
+  <div class="movie-body">
+    <div class="movie-title">心灵捕手</div>
   </div>
 </div>
 
