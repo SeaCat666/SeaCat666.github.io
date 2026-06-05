@@ -51,7 +51,7 @@ comments: true
 
 <div class="movie-item">
   <div class="movie-badge movie">🎬</div>
-  <img class="movie-cover" src="https://img3.doubanio.com/view/photo/l/public/p2614988097.jpg" alt="星际穿越" loading="lazy">
+  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg" alt="星际穿越" loading="lazy">
   <div class="movie-body">
     <div class="movie-title">星际穿越</div>
   </div>
@@ -59,7 +59,7 @@ comments: true
 
 <div class="movie-item">
   <div class="movie-badge movie">🎬</div>
-  <img class="movie-cover" src="https://img3.doubanio.com/view/photo/l/public/p2931370692.jpg" alt="挽救计划" loading="lazy">
+  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BNTkwNzJiYTctNzI3NC00NjE1LTlhYjktY2Q5MTdmMWFmNzcxXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg" alt="挽救计划" loading="lazy">
   <div class="movie-body">
     <div class="movie-title">挽救计划</div>
   </div>
@@ -67,7 +67,7 @@ comments: true
 
 <div class="movie-item">
   <div class="movie-badge movie">🎬</div>
-  <img class="movie-cover" src="https://img3.doubanio.com/view/photo/l/public/p2264592493.jpg" alt="火星救援" loading="lazy">
+  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BMTc2MTQ3MDA1Nl5BMl5BanBnXkFtZTgwODA3OTI4NjE@._V1_SX300.jpg" alt="火星救援" loading="lazy">
   <div class="movie-body">
     <div class="movie-title">火星救援</div>
   </div>
@@ -75,7 +75,7 @@ comments: true
 
 <div class="movie-item">
   <div class="movie-badge movie">🎬</div>
-  <img class="movie-cover" src="https://img9.doubanio.com/view/photo/l/public/p513344864.jpg" alt="盗梦空间" loading="lazy">
+  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_QL75_UX380_CR0,0,380,562_.jpg" alt="盗梦空间" loading="lazy">
   <div class="movie-body">
     <div class="movie-title">盗梦空间</div>
   </div>
@@ -83,7 +83,7 @@ comments: true
 
 <div class="movie-item">
   <div class="movie-badge movie">🎬</div>
-  <img class="movie-cover" src="https://img1.doubanio.com/view/photo/l/public/p2501864539.jpg" alt="银翼杀手2049" loading="lazy">
+  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_QL75_UX380_CR0,0,380,562_.jpg" alt="银翼杀手2049" loading="lazy">
   <div class="movie-body">
     <div class="movie-title">银翼杀手2049</div>
   </div>
@@ -91,7 +91,7 @@ comments: true
 
 <div class="movie-item">
   <div class="movie-badge movie">🎬</div>
-  <img class="movie-cover" src="https://img9.doubanio.com/view/photo/l/public/p2535922184.jpg" alt="阿丽塔：战斗天使" loading="lazy">
+  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BYmZhZGQzM2MtMWEyZC00YTU1LTk4YTQtMTg3ZjEzM2U1NTkxXkEyXkFqcGc@._V1_SX300.jpg" alt="阿丽塔：战斗天使" loading="lazy">
   <div class="movie-body">
     <div class="movie-title">阿丽塔：战斗天使</div>
   </div>
@@ -287,7 +287,7 @@ comments: true
 
 <div class="movie-item">
   <div class="movie-badge movie">🎬</div>
-  <img class="movie-cover" src="https://img9.doubanio.com/view/photo/l/public/p2363084076.jpg" alt="自杀小队" loading="lazy">
+  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BMjM1OTMxNzUyM15BMl5BanBnXkFtZTgwNjYzMTIzOTE@._V1_QL75_UX380_CR0,0,380,562_.jpg" alt="自杀小队" loading="lazy">
   <div class="movie-body">
     <div class="movie-title">自杀小队</div>
     <div class="movie-meta">1-2部</div>
@@ -296,7 +296,7 @@ comments: true
 
 <div class="movie-item">
   <div class="movie-badge movie">🎬</div>
-  <img class="movie-cover" src="https://img3.doubanio.com/view/photo/l/public/p2634360592.jpg" alt="正义联盟（扎导版）" loading="lazy">
+  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BNDA0MzM5YTctZTU2My00NGQ5LWE2NTEtNDM0MjZmMDBkOTZkXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg" alt="正义联盟（扎导版）" loading="lazy">
   <div class="movie-body">
     <div class="movie-title">正义联盟（扎导版）</div>
   </div>
@@ -304,7 +304,7 @@ comments: true
 
 <div class="movie-item">
   <div class="movie-badge movie">🎬</div>
-  <img class="movie-cover" src="https://img2.doubanio.com/view/photo/l/public/p2892365111.jpg" alt="闪电侠" loading="lazy">
+  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BYmE2NzBjNGUtNTJiMy00N2UxLWEyYzMtYzFjODFhMGZlOTgzXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg" alt="闪电侠" loading="lazy">
   <div class="movie-body">
     <div class="movie-title">闪电侠</div>
   </div>
@@ -312,7 +312,7 @@ comments: true
 
 <div class="movie-item">
   <div class="movie-badge movie">🎬</div>
-  <img class="movie-cover" src="https://img1.doubanio.com/view/photo/l/public/p451926968.jpg" alt="黑客帝国" loading="lazy">
+  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BN2NmN2VhMTQtMDNiOS00NDlhLTliMjgtODE2ZTY0ODQyNDRhXkEyXkFqcGc@._V1_QL75_UX380_CR0,4,380,562_.jpg" alt="黑客帝国" loading="lazy">
   <div class="movie-body">
     <div class="movie-title">黑客帝国</div>
     <div class="movie-meta">1-4部</div>
@@ -321,7 +321,7 @@ comments: true
 
 <div class="movie-item">
   <div class="movie-badge movie">🎬</div>
-  <img class="movie-cover" src="https://img1.doubanio.com/view/photo/l/public/p2209718348.jpg" alt="饥饿游戏" loading="lazy">
+  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BMWI1OGM4YjQtNmIxNi00YmE2LWJkNTAtY2Q0YjU4NTI5NWQyXkEyXkFqcGc@._V1_SX300.jpg" alt="饥饿游戏" loading="lazy">
   <div class="movie-body">
     <div class="movie-title">饥饿游戏</div>
     <div class="movie-meta">1-4部 + 前传</div>
@@ -330,7 +330,7 @@ comments: true
 
 <div class="movie-item">
   <div class="movie-badge movie">🎬</div>
-  <img class="movie-cover" src="https://img3.doubanio.com/view/photo/l/public/p2545472803.jpg" alt="流浪地球" loading="lazy">
+  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BM2RkYTg4YWQtNmE3Ny00MmE3LWJkNzQtZTFhNWNjOGM3OTZlXkEyXkFqcGc@._V1_SX300.jpg" alt="流浪地球" loading="lazy">
   <div class="movie-body">
     <div class="movie-title">流浪地球</div>
     <div class="movie-meta">1-2部</div>
