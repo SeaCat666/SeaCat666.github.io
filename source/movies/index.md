@@ -165,7 +165,7 @@ comments: true
 
 <div class="movie-item">
   <div class="movie-badge movie">🎬</div>
-  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BYzJkNmZiMDEtNjg2Yi00ZDljLWJjZGQtZGFiMTExZjMyMTljXkEyXkFqcGdeQXVyMjQ0NzE0MQ@@._V1_SX300.jpg" alt="心灵捕手" loading="lazy">
+  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BNDdjZGQ5YzEtNTc2My00Mjc0LWFlMTctYzkwMzZlNzdiZWYzXkEyXkFqcGc@._V1_QL75_UX380_CR0,9,380,562_.jpg" alt="心灵捕手" loading="lazy">
   <div class="movie-body">
     <div class="movie-title">心灵捕手</div>
   </div>
