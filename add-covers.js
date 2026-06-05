@@ -20,6 +20,7 @@ const TITLE_MAP = {
   '失控玩家': { eng: 'Free Guy', year: '2021' },
   '独行月球': { eng: 'Moon Man', year: '2022' },
   '刺杀小说家': { eng: "A Writer's Odyssey", year: '2021' },
+  '移动迷宫': { eng: 'The Maze Runner', year: '2014' },
   '蜘蛛侠': { eng: 'Spider-Man', year: '2002' },
   '放牛班的春天': { eng: 'The Chorus', year: '2004' },
   '心灵捕手': { eng: 'Good Will Hunting', year: '1997' },
