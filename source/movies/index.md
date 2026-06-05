@@ -402,10 +402,18 @@ comments: true
 
 <div class="movie-item">
   <div class="movie-badge movie">🎬</div>
-  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BM2M0NjUwNzktZWFiMy00NjMyLWE4MGQtMWRhZjY2MjQ4OTA2XkEyXkFqcGc@._V1_SX300.jpg" alt="哥斯拉大战金刚" loading="lazy">
+  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BMTY0N2MzODctY2ExYy00OWYxLTkyNDItMTVhZGIxZjliZjU5XkEyXkFqcGc@._V1_QL75_UX380_CR0,4,380,562_.jpg" alt="哥斯拉大战金刚" loading="lazy">
   <div class="movie-body">
     <div class="movie-title">哥斯拉大战金刚</div>
     <div class="movie-meta">怪兽宇宙 · 新帝国</div>
+  </div>
+</div>
+
+<div class="movie-item">
+  <div class="movie-badge movie">🎬</div>
+  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BMTgyMzc4ODU3NV5BMl5BanBnXkFtZTcwNjk5Mzc1MQ@@._V1_SX300.jpg" alt="全民超人汉考克" loading="lazy">
+  <div class="movie-body">
+    <div class="movie-title">全民超人汉考克</div>
   </div>
 </div>
 

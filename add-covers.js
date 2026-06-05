@@ -50,7 +50,8 @@ const TITLE_MAP = {
   '毒液': { eng: 'Venom', year: '2018' },
   '哥斯拉': { eng: 'Godzilla', year: '2014' },
   '金刚：骷髅岛': { eng: 'Kong Skull Island', year: '2017' },
-  '哥斯拉大战金刚': { eng: 'Godzilla vs Kong', year: '2021' },
+  '哥斯拉大战金刚': { eng: 'Godzilla x Kong: The New Empire', year: '2024' },
+  '全民超人汉考克': { eng: 'Hancock', year: '2008' },
 
   // 真人剧集
   '黑袍纠察队': { eng: 'The Boys', year: '2019' },
