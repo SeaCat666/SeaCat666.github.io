@@ -630,7 +630,7 @@ comments: true
 
 <div class="movie-item">
   <div class="movie-badge aseries">📺</div>
-  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BZjlkMjM1MzYtMmIxYi00ZDAwLWE3OGMtYWIyYTFkMTYyYjE4XkEyXkFqcGdeQXVyMzYzNzc1NjY@._V1_SX300.jpg" alt="鬼灭之刃" loading="lazy">
+  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BMWU1OGEwNmQtNGM3MS00YTYyLThmYmMtN2FjYzQzNzNmNTE0XkEyXkFqcGc@._V1_QL75_UX380_CR0,4,380,562_.jpg" alt="鬼灭之刃" loading="lazy">
   <div class="movie-body">
     <div class="movie-title">鬼灭之刃</div>
     <div class="movie-meta">多季 + 剧场版（结局看漫画）</div>
@@ -666,7 +666,7 @@ comments: true
 
 <div class="movie-item">
   <div class="movie-badge aseries">📺</div>
-  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BMjUwNzNhZTMtM2ZmYy00N2FjLWJlZjktNzk3MWRiYjQzMGU1XkEyXkFqcGdeQXVyMTIyNDEwNjcw._V1_SX300.jpg" alt="刃牙" loading="lazy">
+  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BYmI0MTY0NDgtZDJkYy00Mzk0LWFiZjYtODYwODQyOTAwNzhjXkEyXkFqcGc@._V1_SX300.jpg" alt="刃牙" loading="lazy">
   <div class="movie-body">
     <div class="movie-title">刃牙</div>
     <div class="movie-meta">全系列</div>

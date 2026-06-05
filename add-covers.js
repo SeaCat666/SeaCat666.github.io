@@ -81,7 +81,7 @@ const TITLE_MAP = {
 
   // 动画剧集
   '进击的巨人': { eng: 'Attack on Titan', year: '2013' },
-  '鬼灭之刃': { eng: 'Demon Slayer', year: '2019' },
+  '鬼灭之刃': { eng: 'Demon Slayer: Kimetsu no Yaiba', year: '2019' },
   '赛博朋克边缘行者': { eng: 'Cyberpunk Edgerunners', year: '2022' },
   '海贼王': { eng: 'One Piece', year: '1999' },
   'OVERLORD': { eng: 'Overlord', year: '2015' },
