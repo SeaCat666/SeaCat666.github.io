@@ -36,6 +36,7 @@ comments: true
 .movie-item .movie-meta { font-size: 12px; color: var(--second-text, #888); margin-top: 2px; }
 .movie-item .movie-comment { font-size: 13px; color: var(--text-prew, #555); margin-top: 4px; font-style: italic; }
 .movie-item .movie-rating { flex-shrink: 0; font-size: 13px; color: #f0c040; }
+.movie-item .img-alt { display: none; }
 @media (prefers-color-scheme: dark) {
   .movie-item { background: var(--card-bg, #2a2a2a); border-color: var(--hr-border, #333); }
   .movie-item .movie-comment { color: var(--second-text, #aaa); }
