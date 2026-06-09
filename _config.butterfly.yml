@@ -343,10 +343,8 @@ inject:
       }
 
       /* - Logo 发光背景（解决灰色图标在暗色导航看不清） - */
-      #nav .site-page img,
-      #site-name img,
-      a.blog-button img,
-      #nav #site-name img {
+      .site-icon,
+      .nav-site-title img {
         filter: drop-shadow(0 0 4px rgba(255,255,255,.3)) !important;
         background: rgba(255,255,255,.12) !important;
         border-radius: 50% !important;
@@ -494,7 +492,7 @@ inject:
     - <div class="aplayer no-destroy" data-id="2013698413" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false" data-order="random" data-volume="0.7" data-mutex="true" data-theme="#6b9cc4"></div>
     - |
       <script>
-      // 访问者 IP 与城市显示
+      // 访问者 IP 与城市显示（多 API 回退）
       (() => {
         const cardWebinfo = document.querySelector('.card-webinfo')
         if (!cardWebinfo) return
@@ -503,19 +501,25 @@ inject:
         ipItem.className = 'webinfo-item'
         ipItem.innerHTML = '<div class="item-name">🖥 你的位置 :</div><div class="item-count" id="visitor-location"><i class="fa-solid fa-spinner fa-spin"></i></div>'
         container.appendChild(ipItem)
-        fetch('https://ipwhois.app/json/?lang=zh-CN')
-          .then(r => r.json())
-          .then(d => {
-            const loc = document.getElementById('visitor-location')
-            if (d && d.success && d.city) {
-              loc.innerHTML = `${d.country} · ${d.city}`
-            } else {
-              loc.innerHTML = '未知'
-            }
-          })
-          .catch(() => {
-            document.getElementById('visitor-location').innerHTML = '未知'
-          })
+        const loc = () => document.getElementById('visitor-location')
+        const apis = [
+          () => fetch('https://freeipapi.com/api/json').then(r => r.json()).then(d =>
+            d && d.countryName ? `${d.countryName} · ${d.cityName}` : null),
+          () => fetch('https://ipwhois.app/json/?lang=zh-CN').then(r => r.json()).then(d =>
+            d && d.success && d.city ? `${d.country} · ${d.city}` : null),
+          () => fetch('https://geolocation-db.com/json/').then(r => r.json()).then(d =>
+            d && d.country_name ? `${d.country_name} · ${d.city}` : null)
+        ]
+        let idx = 0
+        const tryNext = () => {
+          if (idx >= apis.length) { loc().innerHTML = '未知'; return }
+          apis[idx]().then(r => {
+            if (r) loc().innerHTML = r
+            else { idx++; tryNext() }
+          }).catch(() => { idx++; tryNext() })
+        }
+        tryNext()
+      })
       })()
       // 文章点赞
       ;(() => {
