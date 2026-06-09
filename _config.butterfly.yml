@@ -1,6 +1,6 @@
 # 导航栏
 nav:
-  logo: /img/猫.png
+  logo: /img/cat.svg
   display_title: true
   display_post_title: true
   fixed: true
@@ -492,8 +492,8 @@ inject:
     - <div class="aplayer no-destroy" data-id="2013698413" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false" data-order="random" data-volume="0.7" data-mutex="true" data-theme="#6b9cc4"></div>
     - |
       <script>
-      // 访问者 IP 与城市显示（多 API 回退）
-      (() => {
+      // 访问者 IP 与城市显示
+      document.addEventListener('DOMContentLoaded', () => {
         const cardWebinfo = document.querySelector('.card-webinfo')
         if (!cardWebinfo) return
         const container = cardWebinfo.querySelector('.webinfo') || cardWebinfo
@@ -501,26 +501,22 @@ inject:
         ipItem.className = 'webinfo-item'
         ipItem.innerHTML = '<div class="item-name">🖥 你的位置 :</div><div class="item-count" id="visitor-location"><i class="fa-solid fa-spinner fa-spin"></i></div>'
         container.appendChild(ipItem)
-        const loc = () => document.getElementById('visitor-location')
-        const apis = [
-          () => fetch('https://freeipapi.com/api/json').then(r => r.json()).then(d =>
-            d && d.countryName ? `${d.countryName} · ${d.cityName}` : null),
-          () => fetch('https://ipwhois.app/json/?lang=zh-CN').then(r => r.json()).then(d =>
-            d && d.success && d.city ? `${d.country} · ${d.city}` : null),
-          () => fetch('https://geolocation-db.com/json/').then(r => r.json()).then(d =>
-            d && d.country_name ? `${d.country_name} · ${d.city}` : null)
-        ]
-        let idx = 0
-        const tryNext = () => {
-          if (idx >= apis.length) { loc().innerHTML = '未知'; return }
-          apis[idx]().then(r => {
-            if (r) loc().innerHTML = r
-            else { idx++; tryNext() }
-          }).catch(() => { idx++; tryNext() })
+        const loc = document.getElementById('visitor-location')
+        function tryFetch(urls) {
+          if (!urls.length) { loc.innerHTML = '未知'; return }
+          fetch(urls[0]).then(r => r.json()).then(d => {
+            const city = d.city || d.cityName || d.city_name || ''
+            const country = d.country || d.countryName || d.country_name || ''
+            if (city) loc.innerHTML = country + ' · ' + city
+            else tryFetch(urls.slice(1))
+          }).catch(() => tryFetch(urls.slice(1)))
         }
-        tryNext()
+        setTimeout(() => tryFetch([
+          'https://freeipapi.com/api/json',
+          'https://ipwhois.app/json/?lang=zh-CN',
+          'https://geolocation-db.com/json/'
+        ]), 200)
       })
-      })()
       // 文章点赞
       ;(() => {
         const addLikeBtn = () => {

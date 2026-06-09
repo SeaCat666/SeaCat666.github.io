@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- 左耳 -->
+  <polygon points="18,35 30,10 45,30" fill="#E8923B"/>
+  <polygon points="25,32 31,18 38,30" fill="#F5C09E"/>
+  <!-- 右耳 -->
+  <polygon points="82,35 70,10 55,30" fill="#E8923B"/>
+  <polygon points="75,32 69,18 62,30" fill="#F5C09E"/>
+  <!-- 脸 -->
+  <ellipse cx="50" cy="58" rx="32" ry="26" fill="#F5A623"/>
+  <!-- 白色嘴部 -->
+  <ellipse cx="50" cy="68" rx="14" ry="9" fill="white"/>
+  <!-- 眼睛 -->
+  <ellipse cx="37" cy="54" rx="6" ry="7" fill="white"/>
+  <ellipse cx="63" cy="54" rx="6" ry="7" fill="white"/>
+  <circle cx="39" cy="55" r="3.5" fill="#3A2E2E"/>
+  <circle cx="65" cy="55" r="3.5" fill="#3A2E2E"/>
+  <!-- 瞳孔高光 -->
+  <circle cx="40.5" cy="54" r="1.2" fill="white"/>
+  <circle cx="66.5" cy="54" r="1.2" fill="white"/>
+  <!-- 鼻子 -->
+  <ellipse cx="50" cy="64" rx="3.5" ry="2.8" fill="#E88B8B"/>
+  <!-- 嘴巴 -->
+  <path d="M46 67 Q50 72 50 67" fill="none" stroke="#5A4A4A" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M54 67 Q50 72 50 67" fill="none" stroke="#5A4A4A" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- 胡须 -->
+  <line x1="16" y1="58" x2="33" y2="62" stroke="#5A4A4A" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="16" y1="65" x2="33" y2="65" stroke="#5A4A4A" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="84" y1="58" x2="67" y2="62" stroke="#5A4A4A" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="84" y1="65" x2="67" y2="65" stroke="#5A4A4A" stroke-width="0.8" stroke-linecap="round"/>
+  <!-- 额头花纹 -->
+  <path d="M38 42 Q50 35 62 42" fill="none" stroke="#D4891A" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="50" y1="42" x2="50" y2="50" stroke="#D4891A" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
