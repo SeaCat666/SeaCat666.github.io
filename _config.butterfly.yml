@@ -492,21 +492,26 @@ inject:
     - <div class="aplayer no-destroy" data-id="2013698413" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false" data-order="random" data-volume="0.7" data-mutex="true" data-theme="#6b9cc4"></div>
     - |
       <script>
-      // 访问者 IP 与城市显示（通过 Vercel Serverless 代理，避免 GFW 封锁）
+      // 访问者 IP 与城市显示
       document.addEventListener('DOMContentLoaded', () => {
-        const cardWebinfo = document.querySelector('.card-webinfo')
-        if (!cardWebinfo) return
-        const container = cardWebinfo.querySelector('.webinfo') || cardWebinfo
-        const ipItem = document.createElement('div')
-        ipItem.className = 'webinfo-item'
-        ipItem.innerHTML = '<div class="item-name">🖥 你的位置 :</div><div class="item-count" id="visitor-location"><i class="fa-solid fa-spinner fa-spin"></i></div>'
-        container.appendChild(ipItem)
-        const loc = document.getElementById('visitor-location')
         setTimeout(() => {
-          fetch('/api/ip').then(r => r.json()).then(d => {
-            if (d && d.city) loc.innerHTML = d.country + ' · ' + d.city
-            else loc.innerHTML = '未知'
-          }).catch(() => { loc.innerHTML = '未知' })
+          const cardWebinfo = document.querySelector('.card-webinfo')
+          if (!cardWebinfo) return
+          const container = cardWebinfo.querySelector('.webinfo') || cardWebinfo
+          const ipItem = document.createElement('div')
+          ipItem.className = 'webinfo-item'
+          ipItem.innerHTML = '<div class="item-name">🖥 你的位置 :</div><div class="item-count" id="visitor-location">加载中…</div>'
+          container.appendChild(ipItem)
+          fetch('https://api.ip.sb/geoip')
+            .then(r => r.json())
+            .then(d => {
+              const loc = document.getElementById('visitor-location')
+              if (d && d.city) loc.innerHTML = d.country + ' · ' + d.city
+              else loc.innerHTML = '未知'
+            })
+            .catch(() => { document.getElementById('visitor-location').innerHTML = '未知' })
+        }, 300)
+      })
         }, 300)
       })
         }
