@@ -202,7 +202,7 @@ aside:
 
 # 代码块
 code_blocks:
-  theme: dark
+  theme: ocean
   macStyle: true
   height_limit: 300
   word_wrap: true
