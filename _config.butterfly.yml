@@ -492,11 +492,11 @@ inject:
         ipItem.className = 'webinfo-item'
         ipItem.innerHTML = '<div class="item-name">🖥 你的位置 :</div><div class="item-count" id="visitor-location"><i class="fa-solid fa-spinner fa-spin"></i></div>'
         container.appendChild(ipItem)
-        fetch('https://ip-api.com/json/?lang=zh-CN&fields=query,city,regionName,country,isp')
+        fetch('https://ipwhois.app/json/?lang=zh-CN')
           .then(r => r.json())
           .then(d => {
             const loc = document.getElementById('visitor-location')
-            if (d && d.city) {
+            if (d && d.success && d.city) {
               loc.innerHTML = `${d.country} · ${d.city}`
             } else {
               loc.innerHTML = '未知'
