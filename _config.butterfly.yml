@@ -502,7 +502,7 @@ inject:
           ipItem.className = 'webinfo-item'
           ipItem.innerHTML = '<div class="item-name">🖥 你的位置 :</div><div class="item-count" id="visitor-location">加载中…</div>'
           container.appendChild(ipItem)
-          fetch('https://api.ip.sb/geoip')
+          fetch('/api/ip')
             .then(r => r.json())
             .then(d => {
               const loc = document.getElementById('visitor-location')
