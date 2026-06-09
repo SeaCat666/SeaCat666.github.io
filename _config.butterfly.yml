@@ -46,9 +46,9 @@ tag_per_img:
 # 页脚背景
 footer_img: false
 
-# 网站背景
+# 网站背景（深海暗色主题）
 background:
-  - '#f7f7f7'
+  - '#0d1117'
 
 # 封面
 cover:
@@ -202,7 +202,7 @@ aside:
 
 # 代码块
 code_blocks:
-  theme: light
+  theme: dark
   macStyle: true
   height_limit: 300
   word_wrap: true
@@ -392,7 +392,7 @@ mask:
   header: true
   footer: true
 enter_transitions: true
-display_mode: light
+display_mode: dark
 hr_icon:
   enable: true
   icon: '\f0c5'
@@ -465,7 +465,7 @@ canvas_fluttering_ribbon:
   enable: false
 canvas_nest:
   enable: true
-  color: '73,177,245'
+  color: '100,200,255'
   opacity: 0.5
   zIndex: -1
   count: 99
