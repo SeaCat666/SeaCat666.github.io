@@ -1,11 +1,9 @@
 {
-  "framework": "hexo",
   "buildCommand": "npx hexo generate",
   "installCommand": "npm ci",
   "outputDirectory": "public",
   "functions": {
     "api/ip.js": {
-      "runtime": "@vercel/node@3",
       "memory": 128,
       "maxDuration": 10
     }
