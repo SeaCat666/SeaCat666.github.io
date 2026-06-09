@@ -341,6 +341,17 @@ inject:
       #nav .menus_items .menus_item > a:hover {
         color: #6b9cc4 !important;
       }
+
+      /* - Logo 发光背景（解决灰色图标在暗色导航看不清） - */
+      #nav .site-page img,
+      #site-name img,
+      a.blog-button img,
+      #nav #site-name img {
+        filter: drop-shadow(0 0 4px rgba(255,255,255,.3)) !important;
+        background: rgba(255,255,255,.12) !important;
+        border-radius: 50% !important;
+        padding: 4px !important;
+      }
       #site-name,
       #site-title,
       #site-subtitle {
