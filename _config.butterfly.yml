@@ -302,7 +302,154 @@ inject:
   head:
     - |
       <style>
-      /* 全站图片平滑加载 - 淡入过渡 */
+      /* ══════════════════════════════════════════
+         深海暗色主题
+         ══════════════════════════════════════════ */
+
+      /* - 基底 - */
+      body {
+        background: #0d1117 !important;
+        color: #c9d1d9 !important;
+      }
+
+      /* - 全局卡片 - */
+      .card-widget,
+      #recent-posts > .recent-post-item,
+      #aside-content .card-widget,
+      .article-sort-item,
+      #post,
+      #page,
+      #archive,
+      #category,
+      #tag,
+      .recent-posts .recent-post-item,
+      .flink-list-item {
+        background: #161b22 !important;
+        border: 1px solid #30363d !important;
+        box-shadow: 0 1px 3px rgba(0,0,0,.3) !important;
+      }
+
+      /* - 导航栏 - */
+      #nav {
+        background: rgba(22,27,34,.88) !important;
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid #30363d !important;
+      }
+      #nav .menus_items .menus_item > a {
+        color: #c9d1d9 !important;
+      }
+      #nav .menus_items .menus_item > a:hover {
+        color: #6b9cc4 !important;
+      }
+      #site-name,
+      #site-title,
+      #site-subtitle {
+        color: #c9d1d9 !important;
+      }
+
+      /* - 内容文字 - */
+      #article-container,
+      .post-content,
+      .article-sort-item-info,
+      .recent-post-info,
+      #post-info,
+      p, li, span, div {
+        color: #c9d1d9;
+      }
+
+      /* - 链接 - */
+      a:not(.social-icon):not(.menus_item_link):not([class*="toc"]) {
+        color: #6b9cc4 !important;
+      }
+
+      /* - 标题 - */
+      h1, h2, h3, h4, h5, h6,
+      .article-title, .recent-posts > .recent-post-item > .recent-post-info > .article-title {
+        color: #e6edf3 !important;
+      }
+
+      /* - 页脚 - */
+      #footer {
+        background: transparent !important;
+        color: #8b949e !important;
+      }
+      #footer-wrap,
+      #footer-wrap a {
+        color: #8b949e !important;
+      }
+      #footer-wrap a:hover {
+        color: #6b9cc4 !important;
+      }
+
+      /* - 侧边栏卡片标题 - */
+      .card-widget .item-headline {
+        color: #e6edf3 !important;
+      }
+
+      /* - 标签云 - */
+      .tag-cloud a {
+        color: #c9d1d9 !important;
+        background: #21262d !important;
+        border: 1px solid #30363d !important;
+      }
+      .tag-cloud a:hover {
+        background: #30363d !important;
+        color: #6b9cc4 !important;
+      }
+
+      /* - 代码块 - */
+      figure.highlight {
+        background: #0d1117 !important;
+        border: 1px solid #30363d !important;
+      }
+
+      /* - 分割线/元信息 - */
+      .post-meta,
+      .post-meta span,
+      .post-meta a,
+      .article-meta,
+      .article-meta-wrap,
+      .article-meta span,
+      .article-meta a,
+      .article-header .article-meta {
+        color: #8b949e !important;
+      }
+      .article-meta a:hover,
+      .post-meta a:hover {
+        color: #6b9cc4 !important;
+      }
+
+      /* - 评论区 - */
+      .twikoo .el-textarea__inner,
+      .twikoo .tk-comments-container,
+      #twikoo .tk-comment {
+        background: #161b22 !important;
+        color: #c9d1d9 !important;
+        border-color: #30363d !important;
+      }
+
+      /* - 分页 - */
+      .pagination .page-number,
+      .pagination .extend {
+        background: #21262d !important;
+        color: #c9d1d9 !important;
+        border: 1px solid #30363d !important;
+      }
+      .pagination .current {
+        background: #6b9cc4 !important;
+        color: #fff !important;
+      }
+
+      /* - 搜索 - */
+      #local-search .search-dialog,
+      #search-box,
+      #local-search-input {
+        background: #161b22 !important;
+        color: #c9d1d9 !important;
+        border-color: #30363d !important;
+      }
+
+      /* - 图片平滑加载 - */
       .reward-main img,
       #post img,
       .article-sort-item img,
@@ -315,12 +462,12 @@ inject:
       /* 打赏二维码样式 */
       #reward .reward-main .reward-all .reward-item img {
         border-radius: 12px !important;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.12) !important;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important;
         transition: transform 0.3s ease, box-shadow 0.3s ease !important;
       }
       #reward .reward-main .reward-all .reward-item img:hover {
         transform: scale(1.05) !important;
-        box-shadow: 0 8px 30px rgba(0,0,0,0.18) !important;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.5) !important;
       }
       @keyframes rewardFadeIn {
         from { opacity: 0; transform: scale(0.9) translateY(10px); }
@@ -333,7 +480,7 @@ inject:
       #reward .reward-main .reward-all .reward-item:nth-child(2) { animation-delay: 0.15s; }
       </style>
   bottom:
-    - <div class="aplayer no-destroy" data-id="2013698413" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false" data-order="random" data-volume="0.7" data-mutex="true" data-theme="#49B1F5"></div>
+    - <div class="aplayer no-destroy" data-id="2013698413" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false" data-order="random" data-volume="0.7" data-mutex="true" data-theme="#6b9cc4"></div>
     - |
       <script>
       // 访问者 IP 与城市显示
@@ -372,19 +519,38 @@ inject:
           btn.className = 'post-like-btn'
           btn.style.cssText = 'text-align:center;margin:20px 0;font-size:1em'
           btn.innerHTML = liked
-            ? '<span style="color:#49B1F5;font-size:1.5rem">❤️</span><br><span style="color:#999">已点赞</span>'
-            : '<button onclick="window.likePost(this)" style="background:#49B1F5;color:#fff;border:none;padding:10px 30px;border-radius:30px;cursor:pointer;font-size:1.1rem;transition:all .3s">❤️ 点赞这篇文章</button>'
+            ? '<span style="color:#6b9cc4;font-size:1.5rem">❤️</span><br><span style="color:#999">已点赞</span>'
+            : '<button onclick="window.likePost(this)" style="background:#6b9cc4;color:#fff;border:none;padding:10px 30px;border-radius:30px;cursor:pointer;font-size:1.1rem;transition:all .3s">❤️ 点赞这篇文章</button>'
           footer.parentNode.insertBefore(btn, footer.nextSibling)
         }
         window.likePost = function(btn) {
           const postKey = window.location.pathname.replace(/\/$/, '')
           localStorage.setItem('liked_' + postKey, '1')
-          btn.closest('.post-like-btn').innerHTML = '<span style="color:#49B1F5;font-size:1.5rem">❤️</span><br><span style="color:#999">已点赞</span>'
+          btn.closest('.post-like-btn').innerHTML = '<span style="color:#6b9cc4;font-size:1.5rem">❤️</span><br><span style="color:#999">已点赞</span>'
         }
         window.addEventListener('load', addLikeBtn)
         window.pjax && document.addEventListener('pjax:complete', addLikeBtn)
       })()
       </script>
+
+# 主题色（暗色深海风，覆盖 Butterfly 蓝色默认值）
+theme_color:
+  enable: true
+  main: "#6b9cc4"
+  paginator: "#6b9cc4"
+  button_hover: "#8bb8ea"
+  text_selection: "#6b9cc4"
+  link_color: "#8b949e"
+  meta_color: "#8b949e"
+  hr_color: "#30363d"
+  code_foreground: "#c9d1d9"
+  code_background: "rgba(255,255,255,.05)"
+  toc_color: "#6b9cc4"
+  blockquote_padding_color: "#30363d"
+  blockquote_background_color: "#161b22"
+  scrollbar_color: "#30363d"
+  meta_theme_color_light: "0d1117"
+  meta_theme_color_dark: "0d1117"
 
 # 其他
 rounded_corners_ui: true
@@ -392,7 +558,7 @@ mask:
   header: true
   footer: true
 enter_transitions: true
-display_mode: dark
+display_mode: light
 hr_icon:
   enable: true
   icon: '\f0c5'
@@ -491,7 +657,7 @@ beautify:
   enable: true
   field: post
   title_prefix_icon: '\f0f6'
-  title_prefix_icon_color: '#49B1F5'
+  title_prefix_icon_color: '#6b9cc4'
 
 # CDN 配置（所有资源本地加载，避免 jsDelivr 国内被屏蔽）
 CDN:
