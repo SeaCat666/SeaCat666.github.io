@@ -492,7 +492,7 @@ inject:
     - <div class="aplayer no-destroy" data-id="2013698413" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false" data-order="random" data-volume="0.7" data-mutex="true" data-theme="#6b9cc4"></div>
     - |
       <script>
-      // 访问者 IP 与城市显示
+      // 访问者 IP 与城市显示（通过 Vercel Serverless 代理，避免 GFW 封锁）
       document.addEventListener('DOMContentLoaded', () => {
         const cardWebinfo = document.querySelector('.card-webinfo')
         if (!cardWebinfo) return
@@ -502,14 +502,13 @@ inject:
         ipItem.innerHTML = '<div class="item-name">🖥 你的位置 :</div><div class="item-count" id="visitor-location"><i class="fa-solid fa-spinner fa-spin"></i></div>'
         container.appendChild(ipItem)
         const loc = document.getElementById('visitor-location')
-        function tryFetch(urls) {
-          if (!urls.length) { loc.innerHTML = '未知'; return }
-          fetch(urls[0]).then(r => r.json()).then(d => {
-            const city = d.city || d.cityName || d.city_name || ''
-            const country = d.country || d.countryName || d.country_name || ''
-            if (city) loc.innerHTML = country + ' · ' + city
-            else tryFetch(urls.slice(1))
-          }).catch(() => tryFetch(urls.slice(1)))
+        setTimeout(() => {
+          fetch('/api/ip').then(r => r.json()).then(d => {
+            if (d && d.city) loc.innerHTML = d.country + ' · ' + d.city
+            else loc.innerHTML = '未知'
+          }).catch(() => { loc.innerHTML = '未知' })
+        }, 300)
+      })
         }
         setTimeout(() => tryFetch([
           'https://freeipapi.com/api/json',
