@@ -314,23 +314,27 @@ inject:
          深海暗色主题
          ══════════════════════════════════════════ */
 
-      /* - 基底（深海渐变：越往下越黑） - */
+      /* - 基底（深海渐变：随滚动越往下越黑） - */
+      html {
+        background: linear-gradient(to bottom,
+          #0a3d6b 0%,
+          #0a2f52 8%,
+          #081f38 20%,
+          #061524 40%,
+          #030c16 60%,
+          #010609 80%,
+          #000203 100%
+        ) !important;
+        min-height: 100%;
+      }
       body {
-        background: #000203 !important;
+        background: transparent !important;
         color: #c9d1d9 !important;
       }
 
-      /* 深海渐变层（覆盖 Butterfly JS 设置的背景色） */
+      /* 让 Butterfly 的 #web_bg 透明，露出 html 的滚动渐变 */
       #web_bg {
-        background: linear-gradient(to bottom,
-          #0a3d6b 0%,
-          #0a2f52 10%,
-          #081f38 25%,
-          #061524 45%,
-          #030c16 65%,
-          #010609 85%,
-          #000203 100%
-        ) fixed !important;
+        background: transparent !important;
       }
 
       /* - 全局卡片 - */
