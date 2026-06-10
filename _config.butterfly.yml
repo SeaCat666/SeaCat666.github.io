@@ -316,15 +316,16 @@ inject:
 
       /* - 基底（深海渐变：随滚动越往下越黑） - */
       html {
-        background: linear-gradient(to bottom,
+        background-color: #000203 !important;
+        background-image: linear-gradient(to bottom,
           #1a6db5 0%,
-          #155d9b 10%,
-          #0e4472 25%,
-          #082b4a 45%,
-          #04182b 65%,
-          #010a14 85%,
+          #0e4472 30%,
+          #04182b 60%,
           #000203 100%
         ) !important;
+        background-size: 100% calc(100% - 100vh) !important;
+        background-position: 0 100vh !important;
+        background-repeat: no-repeat !important;
         min-height: 100%;
       }
       body {
