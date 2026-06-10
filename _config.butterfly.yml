@@ -51,9 +51,19 @@ background:
 
 # 封面
 cover:
-  index_enable: false
-  aside_enable: false
-  archives_enable: false
+  index_enable: true
+  aside_enable: true
+  archives_enable: true
+  # 文章无封面时随机使用以下默认封面
+  default_cover:
+    - /img/msw.png
+    - /img/1.png
+    - /img/2.png
+    - /img/3.png
+    - /img/4.png
+    - /img/5.png
+    - /img/6.png
+    - /img/7.jpg
 
 # 错误图片
 error_img:
