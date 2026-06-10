@@ -427,12 +427,19 @@ inject:
 
       /* - 页脚 - */
       #footer {
-        color: #8b949e !important;
+        color: #e6edf3 !important;
         min-height: 300px !important;
+        background-position: center !important;
+      }
+      #footer-wrap {
+        background: rgba(0,0,0,.5) !important;
+        border-radius: 8px;
+        padding: 12px 20px !important;
+        display: inline-block;
       }
       #footer-wrap,
       #footer-wrap a {
-        color: #8b949e !important;
+        color: #e6edf3 !important;
       }
       #footer-wrap a:hover {
         color: #6b9cc4 !important;
