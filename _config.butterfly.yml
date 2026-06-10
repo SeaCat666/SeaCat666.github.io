@@ -315,9 +315,17 @@ inject:
          深海暗色主题
          ══════════════════════════════════════════ */
 
-      /* - 基底 - */
+      /* - 基底（深海渐变：越往下越黑） - */
       body {
-        background: #0d1117 !important;
+        background: linear-gradient(to bottom,
+          #0a1628 0%,
+          #081320 15%,
+          #050d18 35%,
+          #030a12 55%,
+          #010508 80%,
+          #000203 100%
+        ) !important;
+        background-attachment: local !important;
         color: #c9d1d9 !important;
       }
 
