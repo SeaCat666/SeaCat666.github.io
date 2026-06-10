@@ -428,6 +428,7 @@ inject:
       /* - 页脚 - */
       #footer {
         color: #8b949e !important;
+        min-height: 300px !important;
       }
       #footer-wrap,
       #footer-wrap a {
@@ -618,7 +619,7 @@ theme_color:
 rounded_corners_ui: true
 mask:
   header: true
-  footer: true
+  footer: false
 enter_transitions: true
 display_mode: light
 hr_icon:
