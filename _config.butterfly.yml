@@ -57,11 +57,11 @@ cover:
   # 文章无封面时随机使用以下默认封面
   default_cover:
     - /img/1.jpg
-    - /img/5af10218ee4f6ae714155f15441ae1c3.png
+    - /img/5af10218ee4f6ae714155f15441ae1c3.jpg
     - /img/235f5eb60f42cfe3975e15677ac025d9.jpg
-    - /img/categories.png
-    - /img/gg.png
-    - /img/msw.png
+    - /img/categories.jpg
+    - /img/gg.jpg
+    - /img/msw.jpg
     - /img/tags.jpg
 
 # 错误图片
