@@ -56,14 +56,13 @@ cover:
   archives_enable: true
   # 文章无封面时随机使用以下默认封面
   default_cover:
+    - /img/1.jpg
+    - /img/5af10218ee4f6ae714155f15441ae1c3.png
+    - /img/235f5eb60f42cfe3975e15677ac025d9.jpg
+    - /img/categories.png
+    - /img/gg.png
     - /img/msw.png
-    - /img/1.png
-    - /img/2.png
-    - /img/3.png
-    - /img/4.png
-    - /img/5.png
-    - /img/6.png
-    - /img/7.jpg
+    - /img/tags.jpg
 
 # 错误图片
 error_img:
