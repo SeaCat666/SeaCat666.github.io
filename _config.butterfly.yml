@@ -319,8 +319,13 @@ inject:
         background-color: #000203 !important;
         background-image: linear-gradient(to bottom,
           #1a6db5 0%,
-          #0e4472 30%,
-          #04182b 60%,
+          #1a6db5 10%,
+          #1865a8 20%,
+          #145794 35%,
+          #0e4472 50%,
+          #082b4a 65%,
+          #04182b 80%,
+          #010a14 92%,
           #000203 100%
         ) !important;
         background-size: 100% calc(100% - 100vh) !important;
@@ -331,6 +336,23 @@ inject:
       body {
         background: transparent !important;
         color: #c9d1d9 !important;
+      }
+
+      /* 手机端：header 较矮，渐变起点和颜色适配 */
+      @media screen and (max-width: 768px) {
+        html {
+          background-position: 0 70vh !important;
+          background-size: 100% calc(100% - 70vh) !important;
+          background-image: linear-gradient(to bottom,
+            #135a94 0%,
+            #135a94 5%,
+            #0f4b7d 20%,
+            #0a3560 45%,
+            #051f3a 65%,
+            #020d1a 85%,
+            #000203 100%
+          ) !important;
+        }
       }
 
       /* 让 Butterfly 的 #web_bg 透明，露出 html 的滚动渐变 */
