@@ -317,16 +317,21 @@ inject:
 
       /* - 基底（深海渐变：越往下越黑） - */
       body {
-        background: linear-gradient(to bottom,
-          #0a1628 0%,
-          #081320 15%,
-          #050d18 35%,
-          #030a12 55%,
-          #010508 80%,
-          #000203 100%
-        ) !important;
-        background-attachment: local !important;
+        background: #000203 !important;
         color: #c9d1d9 !important;
+      }
+
+      /* 深海渐变层（覆盖 Butterfly JS 设置的背景色） */
+      #web_bg {
+        background: linear-gradient(to bottom,
+          #0a3d6b 0%,
+          #0a2f52 10%,
+          #081f38 25%,
+          #061524 45%,
+          #030c16 65%,
+          #010609 85%,
+          #000203 100%
+        ) fixed !important;
       }
 
       /* - 全局卡片 - */
