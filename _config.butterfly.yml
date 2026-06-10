@@ -432,7 +432,7 @@ inject:
         background-position: center !important;
       }
       #footer-wrap {
-        background: rgba(0,0,0,.75) !important;
+        background: #000 !important;
         border-radius: 8px;
         padding: 12px 20px !important;
         display: inline-block;

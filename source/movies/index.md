@@ -68,6 +68,14 @@ comments: true
 
 <div class="movie-item">
   <div class="movie-badge movie">🎬</div>
+  <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BNjE5MzYwMzYxMF5BMl5BanBnXkFtZTcwOTk4MTk0OQ@@._V1_QL75_UX380_CR0,0,380,562_.jpg" alt="地心引力" loading="lazy">
+  <div class="movie-body">
+    <div class="movie-title">地心引力</div>
+  </div>
+</div>
+
+<div class="movie-item">
+  <div class="movie-badge movie">🎬</div>
   <img class="movie-cover" src="https://m.media-amazon.com/images/M/MV5BMTc2MTQ3MDA1Nl5BMl5BanBnXkFtZTgwODA3OTI4NjE@._V1_SX300.jpg" alt="火星救援" loading="lazy">
   <div class="movie-body">
     <div class="movie-title">火星救援</div>
