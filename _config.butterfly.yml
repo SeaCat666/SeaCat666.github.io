@@ -12,14 +12,12 @@ menu:
   音乐: /music/ || fas fa-music
   留言板: /guestbook/ || fas fa-comment-dots
   关于: /about/ || fas fa-heart
-  其他:
-    icon: fas fa-ellipsis-h
-    children:
-      时间轴: /archives/ || fas fa-archive
-      分类: /categories/ || fas fa-folder-open
-      标签: /tags/ || fas fa-tags
-      友链: /link/ || fas fa-link
-      相册: /gallery/ || fas fa-images
+  其他||fas fa-ellipsis-h:
+    时间轴: /archives/ || fas fa-archive
+    分类: /categories/ || fas fa-folder-open
+    标签: /tags/ || fas fa-tags
+    友链: /link/ || fas fa-link
+    相册: /gallery/ || fas fa-images
 
 # 社交
 social:
