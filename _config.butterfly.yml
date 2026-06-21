@@ -627,7 +627,7 @@ mask:
   header: true
   footer: false
 enter_transitions: true
-display_mode: light
+display_mode: dark
 hr_icon:
   enable: true
   icon: '\f0c5'
