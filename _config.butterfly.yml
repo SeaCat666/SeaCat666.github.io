@@ -363,10 +363,8 @@ inject:
 
       /* 短页面（归档/关于等）撑开高度，让渐变背景正常显示 */
       #archive,
-      #page,
-      #category,
-      #tag {
-        min-height: 60vh;
+      #page {
+        min-height: 80vh;
       }
 
       /* - 全局卡片 - */
