@@ -339,11 +339,13 @@ inject:
         color: #c9d1d9 !important;
       }
 
-      /* 手机端：渐变颜色适配 */
+      /* 手机端：渐变颜色适配，fixed 解决 Safari 地址栏高度问题 */
       @media screen and (max-width: 768px) {
         html {
           background-position: 0 0 !important;
           background-size: 100% 100% !important;
+          background-attachment: fixed !important;
+          min-height: 100vh !important;
           background-image: linear-gradient(to bottom,
             #135a94 0%,
             #135a94 5%,
