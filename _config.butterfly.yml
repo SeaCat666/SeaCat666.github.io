@@ -426,24 +426,6 @@ inject:
       }
 
       /* - 页脚 - */
-      #footer {
-        color: #e6edf3 !important;
-        min-height: 300px !important;
-        background-position: center !important;
-      }
-      #footer-wrap {
-        background: #000 !important;
-        border-radius: 8px;
-        padding: 12px 20px !important;
-        display: inline-block;
-      }
-      #footer-wrap,
-      #footer-wrap a {
-        color: #fff !important;
-      }
-      #footer-wrap a:hover {
-        color: #6b9cc4 !important;
-      }
 
       /* - 侧边栏卡片标题 - */
       .card-widget .item-headline {
