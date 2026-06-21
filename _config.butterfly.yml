@@ -426,6 +426,16 @@ inject:
       }
 
       /* - 页脚 - */
+      #footer {
+        background: transparent !important;
+      }
+      #footer,
+      #footer a {
+        color: #8b949e !important;
+      }
+      #footer a:hover {
+        color: #6b9cc4 !important;
+      }
 
       /* - 侧边栏卡片标题 - */
       .card-widget .item-headline {
