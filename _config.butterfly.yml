@@ -7,16 +7,19 @@ nav:
 
 menu:
   首页: / || fas fa-home
-  时间轴: /archives/ || fas fa-archive
-  分类: /categories/ || fas fa-folder-open
-  标签: /tags/ || fas fa-tags
+  游戏: /games/ || fas fa-gamepad
+  影视: /movies/ || fas fa-video
+  音乐: /music/ || fas fa-music
   留言板: /guestbook/ || fas fa-comment-dots
   关于: /about/ || fas fa-heart
-  友链: /link/ || fas fa-link
-  相册: /gallery/ || fas fa-images
-  音乐: /music/ || fas fa-music
-  影视: /movies/ || fas fa-video
-  游戏: /games/ || fas fa-gamepad
+  其他:
+    icon: fas fa-ellipsis-h
+    children:
+      时间轴: /archives/ || fas fa-archive
+      分类: /categories/ || fas fa-folder-open
+      标签: /tags/ || fas fa-tags
+      友链: /link/ || fas fa-link
+      相册: /gallery/ || fas fa-images
 
 # 社交
 social:
