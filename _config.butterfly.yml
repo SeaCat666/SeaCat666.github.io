@@ -361,10 +361,10 @@ inject:
         background: transparent !important;
       }
 
-      /* 短页面（归档/关于等）撑开高度，让渐变背景正常显示 */
+      /* 短页面确保高度足够让渐变背景显示 */
       #archive,
       #page {
-        min-height: 80vh;
+        min-height: calc(100vh - 100px);
       }
 
       /* - 全局卡片 - */
