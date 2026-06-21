@@ -315,7 +315,7 @@ inject:
          深海暗色主题
          ══════════════════════════════════════════ */
 
-      /* - 基底（深海渐变：随滚动越往下越黑） - */
+      /* - 基底（深海渐变：从上到下由蓝变黑） - */
       html {
         background-color: #000203 !important;
         background-image: linear-gradient(to bottom,
@@ -329,8 +329,8 @@ inject:
           #010a14 92%,
           #000203 100%
         ) !important;
-        background-size: 100% calc(100% - 100vh) !important;
-        background-position: 0 100vh !important;
+        background-size: 100% 100% !important;
+        background-position: 0 0 !important;
         background-repeat: no-repeat !important;
         min-height: 100%;
       }
@@ -339,11 +339,11 @@ inject:
         color: #c9d1d9 !important;
       }
 
-      /* 手机端：header 较矮，渐变起点和颜色适配 */
+      /* 手机端：渐变颜色适配 */
       @media screen and (max-width: 768px) {
         html {
-          background-position: 0 70vh !important;
-          background-size: 100% calc(100% - 70vh) !important;
+          background-position: 0 0 !important;
+          background-size: 100% 100% !important;
           background-image: linear-gradient(to bottom,
             #135a94 0%,
             #135a94 5%,
@@ -359,12 +359,6 @@ inject:
       /* 让 Butterfly 的 #web_bg 透明，露出 html 的滚动渐变 */
       #web_bg {
         background: transparent !important;
-      }
-
-      /* 短页面确保高度足够让渐变背景显示 */
-      #archive,
-      #page {
-        min-height: calc(100vh - 100px);
       }
 
       /* - 全局卡片 - */
