@@ -537,6 +537,20 @@ inject:
       }
       #reward .reward-main .reward-all .reward-item:nth-child(1) { animation-delay: 0.05s; }
       #reward .reward-main .reward-all .reward-item:nth-child(2) { animation-delay: 0.15s; }
+
+      /* ══════════════════════════════════════════
+         正文字号
+         ══════════════════════════════════════════ */
+      body {
+        font-size: 16px;
+      }
+      #article-container {
+        font-size: 16px;
+        line-height: 1.8;
+      }
+      #article-container p {
+        font-size: 16px;
+      }
       </style>
   bottom:
     - <div class="aplayer no-destroy" data-id="2013698413" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false" data-order="random" data-volume="0.7" data-mutex="true" data-theme="#6b9cc4"></div>
