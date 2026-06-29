@@ -1,0 +1,226 @@
+/* ══════════════════════════════════════════
+   深海暗色主题
+   ══════════════════════════════════════════ */
+
+/* - 基底（深海渐变：从上到下由蓝变黑） - */
+html {
+  background-color: #000203 !important;
+  background-image: linear-gradient(to bottom,
+    #1a6db5 0%,
+    #1a6db5 10%,
+    #1865a8 20%,
+    #145794 35%,
+    #0e4472 50%,
+    #082b4a 65%,
+    #04182b 80%,
+    #010a14 92%,
+    #000203 100%
+  ) !important;
+  background-size: 100% 100% !important;
+  background-position: 0 0 !important;
+  background-repeat: no-repeat !important;
+  min-height: 100%;
+}
+body {
+  background: transparent !important;
+  color: #c9d1d9 !important;
+}
+
+/* 手机端：渐变颜色适配，fixed 解决 Safari 地址栏高度问题 */
+@media screen and (max-width: 768px) {
+  html {
+    background-position: 0 0 !important;
+    background-size: 100% 100% !important;
+    background-attachment: fixed !important;
+    min-height: 100vh !important;
+    background-image: linear-gradient(to bottom,
+      #135a94 0%,
+      #135a94 5%,
+      #0f4b7d 20%,
+      #0a3560 45%,
+      #051f3a 65%,
+      #020d1a 85%,
+      #000203 100%
+    ) !important;
+  }
+}
+
+/* 让 Butterfly 的 #web_bg 透明，露出 html 的滚动渐变 */
+#web_bg {
+  background: transparent !important;
+}
+
+/* - 全局卡片 - */
+.card-widget,
+#recent-posts > .recent-post-item,
+#aside-content .card-widget,
+.article-sort-item,
+#post,
+#page,
+#archive,
+#category,
+#tag,
+.recent-posts .recent-post-item,
+.flink-list-item {
+  background: #161b22 !important;
+  border: 1px solid #30363d !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,.3) !important;
+}
+
+/* - 导航栏 - */
+#nav {
+  background: rgba(22,27,34,.88) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #30363d !important;
+}
+#nav .menus_items .menus_item > a {
+  color: #c9d1d9 !important;
+}
+#nav .menus_items .menus_item > a:hover {
+  color: #6b9cc4 !important;
+}
+
+/* - Logo 发光背景（解决灰色图标在暗色导航看不清） - */
+.site-icon,
+.nav-site-title img {
+  filter: drop-shadow(0 0 4px rgba(255,255,255,.3)) !important;
+  background: rgba(255,255,255,.12) !important;
+  border-radius: 50% !important;
+  padding: 4px !important;
+}
+#site-name,
+#site-title,
+#site-subtitle {
+  color: #c9d1d9 !important;
+}
+
+/* - 内容文字 - */
+#article-container,
+.post-content,
+.article-sort-item-info,
+.recent-post-info,
+#post-info,
+p, li, span, div {
+  color: #c9d1d9;
+}
+
+/* - 链接 - */
+a:not(.social-icon):not(.menus_item_link):not([class*="toc"]) {
+  color: #6b9cc4 !important;
+}
+
+/* - 标题 - */
+h1, h2, h3, h4, h5, h6,
+.article-title, .recent-posts > .recent-post-item > .recent-post-info > .article-title {
+  color: #e6edf3 !important;
+}
+
+/* - 页脚 - */
+#footer {
+  background: transparent !important;
+}
+#footer,
+#footer a {
+  color: #8b949e !important;
+}
+#footer a:hover {
+  color: #6b9cc4 !important;
+}
+
+/* - 侧边栏卡片标题 - */
+.card-widget .item-headline {
+  color: #e6edf3 !important;
+}
+
+/* - 标签云 - */
+.tag-cloud a {
+  color: #c9d1d9 !important;
+  background: #21262d !important;
+  border: 1px solid #30363d !important;
+}
+.tag-cloud a:hover {
+  background: #30363d !important;
+  color: #6b9cc4 !important;
+}
+
+/* - 代码块 - */
+figure.highlight {
+  background: #0d1117 !important;
+  border: 1px solid #30363d !important;
+}
+
+/* - 分割线/元信息 - */
+.post-meta,
+.post-meta span,
+.post-meta a,
+.article-meta,
+.article-meta-wrap,
+.article-meta span,
+.article-meta a,
+.article-header .article-meta {
+  color: #8b949e !important;
+}
+.article-meta a:hover,
+.post-meta a:hover {
+  color: #6b9cc4 !important;
+}
+
+/* - 评论区 - */
+.twikoo .el-textarea__inner,
+.twikoo .tk-comments-container,
+#twikoo .tk-comment {
+  background: #161b22 !important;
+  color: #c9d1d9 !important;
+  border-color: #30363d !important;
+}
+
+/* - 分页 - */
+.pagination .page-number,
+.pagination .extend {
+  background: #21262d !important;
+  color: #c9d1d9 !important;
+  border: 1px solid #30363d !important;
+}
+.pagination .current {
+  background: #6b9cc4 !important;
+  color: #fff !important;
+}
+
+/* - 搜索 - */
+#local-search .search-dialog,
+#search-box,
+#local-search-input {
+  background: #161b22 !important;
+  color: #c9d1d9 !important;
+  border-color: #30363d !important;
+}
+
+/* - 图片平滑加载 - */
+.reward-main img,
+#post img,
+.article-sort-item img,
+.tag-cloud a img,
+#recent-posts img,
+#page img {
+  filter: none !important;
+  transition: opacity 0.4s ease, transform 0.3s ease !important;
+}
+/* 打赏二维码样式 */
+#reward .reward-main .reward-all .reward-item img {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+#reward .reward-main .reward-all .reward-item img:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5) !important;
+}
+@keyframes rewardFadeIn {
+  from { opacity: 0; transform: scale(0.9) translateY(10px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+#reward .reward-main .reward-all .reward-item {
+  animation: rewardFadeIn 0.35s ease-out both !important;
+}
+#reward .reward-main .reward-all .reward-item:nth-child(1) { animation-delay: 0.05s; }
+#reward .reward-main .reward-all .reward-item:nth-child(2) { animation-delay: 0.15s; }

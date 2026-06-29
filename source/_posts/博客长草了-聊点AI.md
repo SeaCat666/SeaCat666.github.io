@@ -1,12 +1,22 @@
 ---
 title: 博客长草了，聊点 AI
-date: 2026-06-02 20:00:00
 tags:
   - 随笔
   - AI
   - Agent
   - 博客
-updated: 2026-06-02 20:00:00
+categories: 随笔
+keywords:
+  - AI
+  - Agent
+  - Codex
+  - Claude Code
+  - 深海猫
+description: 深海猫聊博客断更、跨境电商学习和 AI Agent 带来的效率变化，记录 Codex、Claude Code 与个人博客维护的真实体验。
+cover: /img/head.jpg
+abbrlink: '15167387'
+date: 2026-06-02 20:00:00
+updated: 2026-06-29 00:00:00
 ---
 
 博客四年没更，没什么特别原因，就是懒得写、不想维护代码。

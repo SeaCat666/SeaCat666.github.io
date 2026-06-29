@@ -1,10 +1,19 @@
 ---
 title: HelloWorld
-date: 2020-12-25 18:56:09
 tags:
   - 随笔
   - Hello World
-permalink: /hello-world/
+categories: 随笔
+keywords:
+  - Hexo
+  - 博客搭建
+  - VS Code
+  - 深海猫
+description: 深海猫记录第一次用 Hexo 和 VS Code 搭建个人博客的过程，从环境准备到部署踩坑，留下 2020 年圣诞夜的建站起点。
+cover: /img/home.jpg
+abbrlink: 77770c79
+date: 2020-12-25 18:56:09
+updated: 2026-06-29 00:00:00
 ---
 
 ## 用vscode写md文件的博客文章

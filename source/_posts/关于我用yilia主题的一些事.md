@@ -1,10 +1,19 @@
 ---
 title: 关于我用yilia主题的一些事
-date: 2020-12-27 02:17:51
 tags:
   - 随笔
   - yilia
-permalink: /yilia-theme-story/
+categories: 随笔
+keywords:
+  - yilia
+  - Hexo主题
+  - 博客主题
+  - 深海猫
+description: 深海猫回顾早期使用 yilia 主题搭建博客的经历，包括跟教程换主题、部署页面问题和摸索 Hexo 源文件的踩坑。
+cover: /img/butterfly-icon.png
+abbrlink: 47e900ac
+date: 2020-12-27 02:17:51
+updated: 2026-06-29 00:00:00
 ---
 
 ## 我用yilia主题的起因

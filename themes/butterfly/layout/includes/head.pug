@@ -30,6 +30,9 @@ meta(name="theme-color" content=themeColor)
 
 //- Open_Graph
 include ./head/Open_Graph.pug
+- var metaKeywords = page.keywords || theme.keywords || config.keywords
+if metaKeywords
+  meta(name="keywords" content=Array.isArray(metaKeywords) ? metaKeywords.join(',') : metaKeywords)
 
 //- Structured Data
 include ./head/structured_data.pug

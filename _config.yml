@@ -5,15 +5,18 @@
 title: 深海猫
 subtitle: '愿我们彼此好在未来'
 description: '会早睡吗？'
-keywords: 深海猫
+keywords: 深海猫,深海猫博客,个人博客,编程,欧阳飞华,Hexo
 author: 深海猫
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
 url: https://www.deepseacat.cn
-permalink: :year/:month/:day/:title/
+permalink: posts/:abbrlink.html
 permalink_defaults:
+abbrlink:
+  alg: crc32
+  rep: hex
 pretty_urls:
   trailing_index: false
 
@@ -83,6 +86,23 @@ sitemap:
   path:
     - sitemap.xml
     - sitemap.txt
+
+# 百度 sitemap
+baidusitemap:
+  path: baidusitemap.xml
+
+# robots.txt
+robotstxt:
+  useragent: "*"
+  allow:
+    - /
+  disallow:
+    - /page/
+    - /js/
+    - /css/
+    - /fonts/
+    - /img/
+  sitemap: https://www.deepseacat.cn/sitemap.xml
 
 # Deployment
 deploy:
