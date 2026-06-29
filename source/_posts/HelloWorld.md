@@ -1,10 +1,15 @@
 ---
 title: HelloWorld
 date: 2020-12-25 18:56:09
+categories:
+  - 随笔
 tags:
   - 随笔
   - Hello World
-permalink: /hello-world/
+keywords: Hello World,Hexo,博客搭建
+description: 2020年圣诞节凌晨，用Hexo搭建了第一个博客，记录搭建过程。
+cover: /img/home.jpg
+abbrlink: 77770c79
 ---
 
 ## 用vscode写md文件的博客文章

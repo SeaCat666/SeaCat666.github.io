@@ -28,6 +28,11 @@ meta(name="copyright" content=pageCopyright)
 meta(name ="format-detection" content="telephone=no")
 meta(name="theme-color" content=themeColor)
 
+//- keywords
+- var metaKeywords = page.keywords || theme.keywords || config.keywords
+if metaKeywords
+  meta(name="keywords" content=Array.isArray(metaKeywords) ? metaKeywords.join(',') : metaKeywords)
+
 //- Open_Graph
 include ./head/Open_Graph.pug
 

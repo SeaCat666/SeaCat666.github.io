@@ -1,10 +1,16 @@
 ---
 title: 关于我用yilia主题的一些事
 date: 2020-12-27 02:17:51
+categories:
+  - 随笔
+  - Hexo
 tags:
   - 随笔
   - yilia
-permalink: /yilia-theme-story/
+keywords: yilia,Hexo主题,博客
+description: 记录使用yilia主题的过程和遇到的坑。
+cover: /img/home.jpg
+abbrlink: c1572dbd
 ---
 
 ## 我用yilia主题的起因
