@@ -11,7 +11,7 @@ tags:
   - 博客
 keywords: AI,Agent,Codex,Claude Code,DeepSeek,跨境电商
 description: 博客四年没更，聊聊AI工具和跨境电商的经历。
-cover: /img/home.jpg
+cover: /img/cover-msw.png
 abbrlink: 47e900ac
 updated: 2026-06-02 20:00:00
 ---

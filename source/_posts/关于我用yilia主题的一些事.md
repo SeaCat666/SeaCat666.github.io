@@ -9,7 +9,7 @@ tags:
   - yilia
 keywords: yilia,Hexo主题,博客
 description: 记录使用yilia主题的过程和遇到的坑。
-cover: /img/home.jpg
+cover: /img/cover-235f5eb60f42cfe3975e15677ac025d9.jpg
 abbrlink: c1572dbd
 ---
 

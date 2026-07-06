@@ -8,7 +8,7 @@ tags:
   - Hello World
 keywords: Hello World,Hexo,博客搭建
 description: 2020年圣诞节凌晨，用Hexo搭建了第一个博客，记录搭建过程。
-cover: /img/home.jpg
+cover: /img/cover-tags.jpg
 abbrlink: 77770c79
 ---
 
