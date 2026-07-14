@@ -244,7 +244,7 @@ search:
   use: local_search
   placeholder: 搜索文章...
   local_search:
-    preload: true
+    preload: false
     unescape: true
 
 # 分享
@@ -257,7 +257,7 @@ share:
 comments:
   use: Twikoo
   text: true
-  lazyload: false
+  lazyload: true
   count: true
   card_post_count: false
   # 在每个页面的评论区显示"来发第一条留言吧"
@@ -469,23 +469,23 @@ canvas_nest:
   color: '100,200,255'
   opacity: 0.5
   zIndex: -1
-  count: 99
+  count: 48
 
 # 鼠标点击特效
 fireworks:
   enable: false
 click_heart:
   enable: true
-  mobile: true
+  mobile: false
 clickShowText:
-  enable: true
+  enable: false
   text:
     - ❤️
     - 🐱
     - 加油
   fontSize: 20px
   random: true
-  mobile: true
+  mobile: false
 
 # 文章美化（保留）
 beautify:

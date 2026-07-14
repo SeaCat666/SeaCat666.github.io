@@ -56,6 +56,11 @@ if (theme.pwa && theme.pwa.enable)
 link(rel='stylesheet', href=url_for(theme.asset.main_css))
 link(rel='stylesheet', href=url_for(theme.asset.fontawesome))
 
+//- APlayer creates its full playlist as soon as JS runs. Load its layout CSS
+//- before first paint so slow networks never expose the unstyled track list.
+if theme.aplayerInject && theme.aplayerInject.enable
+  link(rel='stylesheet' href=url_for(theme.asset.aplayer_css))
+
 if (theme.snackbar && theme.snackbar.enable)
   link(rel='stylesheet', href=url_for(theme.asset.snackbar_css) media="print" onload="this.media='all'")
 

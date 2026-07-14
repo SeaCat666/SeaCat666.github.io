@@ -100,8 +100,27 @@
       .article-sort-item-info,
       .recent-post-info,
       #post-info,
-      p, li, span, div {
+      .card-widget {
         color: #c9d1d9;
+      }
+
+      /* 播放器关键兜底：即使第三方样式请求失败，也不会让歌单和封面铺满页面。 */
+      :where(.aplayer[data-fixed="true"]:not(.aplayer-fixed)) {
+        visibility: hidden;
+      }
+      :where(.aplayer.aplayer-fixed) {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 100;
+        width: 400px;
+        max-width: 100%;
+        max-height: 66px;
+        overflow: hidden;
+        background: #161b22;
+      }
+      :where(.aplayer.aplayer-fixed) .aplayer-list {
+        display: none;
       }
 
       /* - 链接 - */
@@ -237,4 +256,18 @@
       }
       #article-container p {
         font-size: 16px;
+      }
+
+      /* 键盘操作可见，减少动态效果设置也能被系统偏好尊重。 */
+      :focus-visible {
+        outline: 2px solid #8bb8ea;
+        outline-offset: 3px;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+          scroll-behavior: auto !important;
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
       }
