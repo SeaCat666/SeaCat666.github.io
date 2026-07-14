@@ -12,7 +12,11 @@ const lazyload = htmlContent => {
   if (hexo.theme.config.lazyload.native) {
     // Use more precise replacement: only replace img tags in HTML, not content inside script tags
     return htmlContent.replace(/(<img(?![^>]*?\bloading=)(?:\s[^>]*?)?>)(?![^<]*<\/script>)/gi, match => {
-      return match.replace(/>$/, ' loading=\'lazy\'>')
+      // Keep XHTML-style <img /> markup valid by inserting the attribute
+      // before the closing slash instead of producing `<img / loading>`.
+      return match.replace(/\s*\/?>$/, ending => (
+        ending.includes('/') ? ' loading=\'lazy\' />' : ' loading=\'lazy\'>'
+      ))
     })
   }
 

@@ -396,7 +396,8 @@ hr_icon:
 lazyload:
   enable: true
   native: true
-  field: site
+  # 首页卡片封面直接加载，正文图片继续懒加载
+  field: post
   placeholder:
   blur: false
 Open_Graph_meta:
