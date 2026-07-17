@@ -1,5 +1,91 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "npx hexo generate",
   "installCommand": "npm ci",
-  "outputDirectory": "public"
+  "outputDirectory": "public",
+  "redirects": [
+    {
+      "source": "/2020/12/25/HelloWorld/",
+      "destination": "/posts/77770c79.html",
+      "permanent": true
+    },
+    {
+      "source": "/hello-world/",
+      "destination": "/posts/77770c79.html",
+      "permanent": true
+    },
+    {
+      "source": "/img/cover-msw.png",
+      "destination": "/img/cover-msw.webp",
+      "permanent": true
+    },
+    {
+      "source": "/img/cover-1.jpg",
+      "destination": "/img/cover-1.webp",
+      "permanent": true
+    },
+    {
+      "source": "/img/cover-4375af3473dc624a52cb8ca0a0bdcd36.png",
+      "destination": "/img/cover-4375af3473dc624a52cb8ca0a0bdcd36.webp",
+      "permanent": true
+    },
+    {
+      "source": "/img/cover-categories.png",
+      "destination": "/img/cover-categories.webp",
+      "permanent": true
+    },
+    {
+      "source": "/img/cover-235f5eb60f42cfe3975e15677ac025d9.jpg",
+      "destination": "/img/cover-235f5eb60f42cfe3975e15677ac025d9.webp",
+      "permanent": true
+    },
+    {
+      "source": "/img/cover-tags.jpg",
+      "destination": "/img/cover-tags.webp",
+      "permanent": true
+    },
+    {
+      "source": "/img/tx.jpg",
+      "destination": "/img/tx.webp",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/img/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800, stale-while-revalidate=2592000"
+        }
+      ]
+    },
+    {
+      "source": "/css/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800, stale-while-revalidate=2592000"
+        }
+      ]
+    },
+    {
+      "source": "/js/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800, stale-while-revalidate=2592000"
+        }
+      ]
+    },
+    {
+      "source": "/pluginsSrc/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800, stale-while-revalidate=2592000"
+        }
+      ]
+    }
+  ]
 }

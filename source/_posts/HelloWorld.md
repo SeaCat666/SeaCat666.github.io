@@ -7,8 +7,8 @@ tags:
   - 随笔
   - Hello World
 keywords: Hello World,Hexo,博客搭建
-description: 2020年圣诞节凌晨，用Hexo搭建了第一个博客，记录搭建过程。
-cover: /img/cover-tags.jpg
+description: 深海猫在 2020 年圣诞节用 VS Code、Git、Node.js 和 Hexo 搭建第一个个人博客的简短记录。
+cover: /img/cover-tags.webp
 abbrlink: 77770c79
 ---
 

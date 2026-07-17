@@ -42,8 +42,43 @@ include ./head/structured_data.pug
 !=favicon_tag(theme.favicon || config.favicon)
 link(rel="canonical" href=urlNoIndex(null,config.pretty_urls.trailing_index,config.pretty_urls.trailing_html))
 
+//- Preload only the hero image used as the current page's LCP background.
+-
+  const returnPreloadTopImg = img => img !== false ? img || theme.default_top_img : false
+  let preloadTopImg = false
+
+  if (!theme.disable_top_img && page.top_img !== false) {
+    switch (globalPageType) {
+      case 'post':
+        preloadTopImg = page.top_img || page.cover || theme.default_top_img
+        break
+      case 'page':
+        preloadTopImg = page.top_img || theme.default_top_img
+        break
+      case 'tag':
+        preloadTopImg = theme.tag_per_img && theme.tag_per_img[page.tag] || returnPreloadTopImg(theme.tag_img)
+        break
+      case 'category':
+        preloadTopImg = theme.category_per_img && theme.category_per_img[page.category] || returnPreloadTopImg(theme.category_img)
+        break
+      case 'home':
+        preloadTopImg = returnPreloadTopImg(theme.index_img)
+        break
+      case 'archive':
+        preloadTopImg = returnPreloadTopImg(theme.archive_img)
+        break
+      default:
+        preloadTopImg = page.top_img || theme.default_top_img
+    }
+  }
+
+  const preloadTopImgIsFile = typeof preloadTopImg === 'string' && /\.(png|jpe?g|gif|svg|webp|avif)(\?.*)?$/i.test(preloadTopImg)
+
+if preloadTopImgIsFile
+  link(rel='preload' as='image' href=url_for(preloadTopImg) fetchpriority='high')
+
 //- 預解析
-!=partial('includes/head/preconnect', {}, {cache: true})
+include ./head/preconnect.pug
 
 //- 網站驗證
 !=partial('includes/head/site_verification', {}, {cache: true})

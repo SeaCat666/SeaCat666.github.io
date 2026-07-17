@@ -1,7 +1,9 @@
 ---
-title: about
+title: 关于深海猫
 date: 2021-12-16 14:57:43
 type: about
+description: 深海猫的个人介绍、博客内容方向和联系方式。
+keywords: 深海猫,DeepSeaCat,个人博客
 ---
 
 ## 🐱 关于我

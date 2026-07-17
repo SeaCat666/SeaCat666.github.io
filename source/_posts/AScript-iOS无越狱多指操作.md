@@ -10,7 +10,7 @@ tags:
   - 辅助触控
 keywords: 'PSG2,iOS自动化,AScript,无越狱,多指操作,辅助触控,AssistiveTouch'
 description: AScript 的连续点击代替不了 iOS 多指手势，WDA 又没跑通。我最后用辅助触控录制自定手势，补上了 PSG2 自动化脚本的最后一个缺口。
-cover: /img/cover-tags.jpg
+cover: /img/cover-tags.webp
 abbrlink: 4394aee2
 date: 2026-07-17 13:45:00
 updated: 2026-07-17 16:00:00
@@ -28,7 +28,7 @@ updated: 2026-07-17 16:00:00
 
 图 1 里 PSG2 一周挂了 100 小时 50 分钟，手机平均每天亮 23 小时 2 分钟。电脑上还挂着一个用罗技驱动写的《黎明杀机》脚本。我也说不清是喜欢这种自动化，还是单纯不喜欢自己的设备闲着。
 
-![手机挂 PSG2 脚本的屏幕时间](/img/psg2-script-screen-time.png)
+![手机挂 PSG2 脚本的屏幕时间](/img/psg2-script-screen-time.png "PSG2 自动化脚本一周运行 100 小时的屏幕时间")
 
 ## 它居然还能自己重启游戏
 
@@ -91,7 +91,7 @@ AScript 后面又突然改成了 no-WDA。为什么改、里面是什么原理�
 
 过去 30 天我在 DeepSeek 上跑掉了 2,102,959,150 token，API 请求 20,875 次，消费 216.58 元，账户累计消费 323.46 元。我觉得自己应该有资格吐槽两句。
 
-![DeepSeek 近 30 天 21 亿 token 和费用](/img/deepseek-30-day-token-usage.png)
+![DeepSeek 近 30 天 21 亿 token 和费用](/img/deepseek-30-day-token-usage.png "DeepSeek 近 30 天 21 亿 token 与 API 费用")
 
 跑到这个量以后，我反而准备放弃 DeepSeek 了。
 
@@ -111,7 +111,7 @@ DeepSeek 看起来便宜，但把来回返工和折腾配置的时间算进去�
 
 这张图差不多就是手机和我现在的精神状态：
 
-![PSG2 meme：今天才肝了 12 个小时呀，你不能倒下](/img/psg2-12-hour-meme.jpg)
+![PSG2 meme：今天才肝了 12 个小时呀，你不能倒下](/img/psg2-12-hour-meme.jpg "PSG2 meme：今天才肝了 12 个小时呀，你不能倒下")
 
 至于 AScript 为什么换 no-WDA、免费签名到底还能不能折腾，我懒得管了。
 

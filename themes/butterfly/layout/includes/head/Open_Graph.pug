@@ -1,16 +1,72 @@
 if theme.Open_Graph_meta.enable
   -
-    const coverVal = page.cover_type === 'img' ? page.cover : theme.avatar.img
-    let ogOption = Object.assign({
+    const pageMetaTitle = pageTitle || config.title
+    const cleanMetaText = value => strip_html(String(value || '')).replace(/\s+/g, ' ').trim()
+    let descriptionSource = ''
+
+    switch (globalPageType) {
+      case 'post':
+        descriptionSource = page.description || page.excerpt || page.content || config.description
+        break
+      case 'tag':
+        descriptionSource = `深海猫关于「${page.tag}」标签的文章，收录相关技术记录与生活随笔。`
+        break
+      case 'category':
+        descriptionSource = `深海猫「${page.category}」分类下的文章，收录相关技术记录与生活随笔。`
+        break
+      case 'archive':
+        descriptionSource = `深海猫的${pageMetaTitle}文章归档，按时间查看技术记录与生活随笔。`
+        break
+      case '404':
+        descriptionSource = '页面未找到，请返回深海猫博客首页继续浏览。'
+        break
+      case 'home':
+        descriptionSource = config.description
+        break
+      default:
+        descriptionSource = page.description || `${pageMetaTitle}：${config.description}`
+    }
+
+    const metaDescription = cleanMetaText(descriptionSource).slice(0, 200)
+    const returnTopImg = img => img !== false ? img || theme.default_top_img : false
+    let socialImage = false
+
+    switch (globalPageType) {
+      case 'post':
+        socialImage = page.cover_type === 'img' ? page.cover : page.top_img || theme.default_top_img
+        break
+      case 'tag':
+        socialImage = theme.tag_per_img && theme.tag_per_img[page.tag] || returnTopImg(theme.tag_img)
+        break
+      case 'category':
+        socialImage = theme.category_per_img && theme.category_per_img[page.category] || returnTopImg(theme.category_img)
+        break
+      case 'archive':
+        socialImage = returnTopImg(theme.archive_img)
+        break
+      case 'home':
+        socialImage = returnTopImg(theme.index_img)
+        break
+      default:
+        socialImage = page.type === 'about' ? theme.avatar.img : page.top_img || theme.default_top_img
+    }
+
+    socialImage = socialImage || theme.avatar.img
+    const absoluteSocialImage = socialImage ? full_url_for(socialImage) : ''
+    const ogOption = Object.assign({
       type: globalPageType === 'post' ? 'article' : 'website',
-      image: coverVal ? full_url_for(coverVal) : '',
+      title: pageMetaTitle,
+      description: metaDescription,
+      image: absoluteSocialImage,
+      twitter_image: absoluteSocialImage,
       fb_admins: theme.facebook_comments.user_id || '',
       fb_app_id: theme.facebook_comments.app_id || '',
     }, theme.Open_Graph_meta.option)
   -
   != open_graph(ogOption)
+  meta(name="twitter:title" content=pageMetaTitle)
+  meta(name="twitter:description" content=metaDescription)
 else
   - const description = page.description || page.content || page.title || config.description
   if description
     meta(name="description" content=truncate(description, 150))
-

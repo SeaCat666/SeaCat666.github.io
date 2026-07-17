@@ -8,8 +8,8 @@ tags:
   - 随笔
   - yilia
 keywords: yilia,Hexo主题,博客
-description: 记录使用yilia主题的过程和遇到的坑。
-cover: /img/cover-235f5eb60f42cfe3975e15677ac025d9.jpg
+description: 深海猫记录 Hexo 使用 Yilia 主题的起因、Windows 环境搭建与部署踩坑，以及当年没解决的分页 Logo 问题。
+cover: /img/cover-235f5eb60f42cfe3975e15677ac025d9.webp
 abbrlink: c1572dbd
 ---
 

@@ -15,7 +15,7 @@
           include ./card_post_toc.pug
         if page.series
           include ./card_post_series.pug
-        !=partial('includes/widget/card_recent_post', {}, {cache: true})
+        include ./card_recent_post.pug
         !=partial('includes/widget/card_ad', {}, {cache: true})
   else
     //- page
@@ -26,7 +26,7 @@
     .sticky_layout
       if showToc
         include ./card_post_toc.pug
-      !=partial('includes/widget/card_recent_post', {}, {cache: true})
+      include ./card_recent_post.pug
       !=partial('includes/widget/card_ad', {}, {cache: true})
       !=partial('includes/widget/card_newest_comment', {}, {cache: true})
       !=partial('includes/widget/card_categories', {}, {cache: true})

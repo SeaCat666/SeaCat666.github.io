@@ -1,31 +1,76 @@
-if theme.structured_data
+if theme.structured_data && theme.structured_data.enable
+  - let jsonLdScript = ''
+
   if page.layout === 'post'
     -
       // https://developers.google.com/search/docs/appearance/structured-data/article
 
       const title = page.title
       const url = page.permalink
-      const imageVal = page.cover_type === 'img' ? page.cover : theme.avatar.img
+      const descriptionSource = page.description || page.excerpt || page.content || config.description
+      const description = strip_html(String(descriptionSource)).replace(/\s+/g, ' ').trim().slice(0, 200)
+      const imageVal = page.cover_type === 'img' ? page.cover : page.top_img || theme.default_top_img || theme.avatar.img
       const image = imageVal ? full_url_for(imageVal) : ''
       const datePublished = page.date.toISOString()
       const dateModified = (page.updated || page.date).toISOString()
-      const author = page.copyright_author || config.author
-      const authorHrefVal = page.copyright_author_href || theme.post_copyright.author_href || config.url
+      const authorName = page.copyright_author || config.author
+      const authorHrefVal = page.copyright_author_href || theme.structured_data.author_url || theme.post_copyright.author_href || config.url
       const authorHref = full_url_for(authorHrefVal)
+      const sameAs = Array.isArray(theme.structured_data.same_as) ? theme.structured_data.same_as.filter(Boolean) : []
+      const author = {
+        "@type": "Person",
+        "name": authorName,
+        "url": authorHref
+      }
+
+      if (sameAs.length) author.sameAs = sameAs
 
       const jsonLd = {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": title,
+        "description": description,
         "url": url,
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": url
+        },
         "image": image,
         "datePublished": datePublished,
         "dateModified": dateModified,
-        "author": [{
-          "@type": "Person",
-          "name": author,
-          "url": authorHref
-        }]
+        "inLanguage": config.language,
+        "author": [author],
+        "publisher": author
+      }
+
+      jsonLdScript = JSON.stringify(jsonLd, null, 2)
+    -
+
+  else if page.type === 'about'
+    -
+      // https://developers.google.com/search/docs/appearance/structured-data/profile-page
+
+      const profileUrl = full_url_for('/about/')
+      const sameAs = Array.isArray(theme.structured_data.same_as) ? theme.structured_data.same_as.filter(Boolean) : []
+      const alternateNames = Array.isArray(theme.structured_data.alternate_name) ? theme.structured_data.alternate_name.filter(Boolean) : []
+      const person = {
+        "@type": "Person",
+        "name": config.author,
+        "alternateName": alternateNames,
+        "description": config.description,
+        "url": profileUrl,
+        "image": full_url_for(theme.avatar.img)
+      }
+
+      if (sameAs.length) person.sameAs = sameAs
+
+      const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "url": profileUrl,
+        "dateCreated": page.date.toISOString(),
+        "dateModified": (page.updated || page.date).toISOString(),
+        "mainEntity": person
       }
 
       jsonLdScript = JSON.stringify(jsonLd, null, 2)
@@ -35,33 +80,32 @@ if theme.structured_data
     -
       // https://developers.google.com/search/docs/appearance/site-names#website
 
-      const baseUrl = config.url;
-      const currentPath = url_for('/');
-      const isRootOrSubdomain = currentPath.split('/').filter(Boolean).length === 0;
-
-      if (isRootOrSubdomain) {
-        const domain = new URL(config.url).hostname;
-        const alternateNames = theme.structured_data.alternate_name || [];
-
-        if (config.subtitle) {
-          alternateNames.push(config.subtitle);
-        }
-
-        if (domain) {
-          alternateNames.push(domain);
-        }
-
-        const jsonLd = {
-          "@context": "https://schema.org",
-          "@type": "WebSite",
-          "name": config.title,
-          "alternateName": alternateNames,
-          "url": full_url_for('/'),
-        }
-
-        jsonLdScript = JSON.stringify(jsonLd, null, 2)
+      const domain = new URL(config.url).hostname
+      const configuredNames = Array.isArray(theme.structured_data.alternate_name) ? theme.structured_data.alternate_name : []
+      const alternateNames = [...new Set([...configuredNames, domain].filter(name => name && name !== config.title))]
+      const authorUrl = full_url_for(theme.structured_data.author_url || '/about/')
+      const sameAs = Array.isArray(theme.structured_data.same_as) ? theme.structured_data.same_as.filter(Boolean) : []
+      const author = {
+        "@type": "Person",
+        "name": config.author,
+        "url": authorUrl
       }
+
+      if (sameAs.length) author.sameAs = sameAs
+
+      const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": config.title,
+        "alternateName": alternateNames,
+        "url": full_url_for('/'),
+        "inLanguage": config.language,
+        "publisher": author
+      }
+
+      jsonLdScript = JSON.stringify(jsonLd, null, 2)
     -
 
-  script(type="application/ld+json").
-    !{jsonLdScript}
+  if jsonLdScript
+    script(type="application/ld+json").
+      !{jsonLdScript}

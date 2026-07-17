@@ -41,7 +41,14 @@ hexo.extend.generator.register('post', locals => {
   const coverGenerator = createCoverGenerator()
 
   const handleImg = data => {
-    let { cover: coverVal, top_img: topImg, pagination_cover: paginationCover } = data
+    let { cover: coverVal, index_img: indexImg, top_img: topImg, pagination_cover: paginationCover } = data
+
+    // Keep compatibility with posts migrated from themes that use index_img.
+    // An explicit cover (including cover: false) always has higher priority.
+    if (coverVal !== false && !coverVal && indexImg) {
+      data.cover = indexImg
+      coverVal = indexImg
+    }
 
     // Add path to top_img and cover if post_asset_folder is enabled
     if (postAssetFolder) {

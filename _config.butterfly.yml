@@ -24,16 +24,16 @@ social:
   fab fa-github: https://github.com/SeaCat666 || Github || '#24292e'
 
 # 图标
-favicon: /img/favicon.ico
+favicon: /img/cat.svg
 
 # 头像
 avatar:
-  img: /img/tx.jpg
+  img: /img/tx.webp
 
 # 背景图
 disable_top_img: false
 tag_img: /img/tags.jpg
-category_img: /img/categories.png
+category_img: /img/categories.jpg
 archive_img: /img/home.jpg
 default_top_img: /img/home.jpg
 index_img: /img/home.jpg
@@ -69,8 +69,6 @@ cover:
 error_img:
   flink: /img/friend_404.gif
   post_page: /img/404.jpg
-
-keywords: 深海猫,技术博客,编程,Linux,Hexo
 
 # 404
 error_404:
@@ -185,7 +183,7 @@ aside:
     limit: 5
     sort: date
   card_newest_comments:
-    enable: true
+    enable: false
     limit: 6
     storage: 10
     avatar: true
@@ -294,8 +292,6 @@ microsoft_clarity: x05keoal9a
 # 站点验证（Google Search Console / Bing / Baidu / 其他）
 # 填入对应的验证字符串即可自动注入到 <head>
 site_verification:
-  - name: google-site-verification
-    content: REPLACE_WITH_GOOGLE_SEARCH_CONSOLE_CODE
   - name: baidu-site-verification
     content: codeva-14gaoQwRwM
 
@@ -404,12 +400,14 @@ Open_Graph_meta:
   enable: true
   option:
     twitter_card: summary_large_image
-    twitter_image: /img/home.jpg
 
 structured_data:
   enable: true
   alternate_name:
-    - 深海猫
+    - DeepSeaCat
+  author_url: https://www.deepseacat.cn/about/
+  same_as:
+    - https://github.com/SeaCat666
 
 # 分类/标签页 UI 样式（index = 卡片首页风格）
 category_ui: index
@@ -453,7 +451,7 @@ rightside_bottom: 100px
 
 # 加载动画（开启后页面加载时有 loading 效果）
 preloader:
-  enable: true
+  enable: false
   source: 1
 
 # 打字特效（输入时屏幕震动效果）
@@ -466,7 +464,7 @@ canvas_ribbon:
 canvas_fluttering_ribbon:
   enable: false
 canvas_nest:
-  enable: true
+  enable: false
   color: '100,200,255'
   opacity: 0.5
   zIndex: -1
