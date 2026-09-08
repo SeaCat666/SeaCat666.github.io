@@ -1,6 +1,7 @@
 User-agent: *
+Allow: /
 Disallow: /api/
 Disallow: /img/wxskm.jpg
 Disallow: /img/zfbskm.jpg
-Allow: /
-Sitemap: https://www.deepseacat.cn/sitemap.xml
+
+Sitemap: https://www.deepseacat.cn/sitemap-index.xml

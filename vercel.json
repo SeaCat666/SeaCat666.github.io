@@ -1,5 +1,0 @@
-{
-  "buildCommand": "npx hexo generate",
-  "installCommand": "npm ci",
-  "outputDirectory": "public"
-}
