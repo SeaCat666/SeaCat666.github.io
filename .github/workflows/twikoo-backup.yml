@@ -1,7 +1,5 @@
 name: twikoo-comments-backup
 
-# 临时工作流：GitHub 的 runner 在墙外，能连上 Vercel 上的 Twikoo 后端，
-# 把老留言抓下来提交进仓库，用完即删。
 on:
   push:
     paths:
@@ -12,58 +10,46 @@ permissions:
   contents: write
 
 jobs:
-  backup:
+  probe:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Fetch comments
+      - name: Probe backend
         run: |
-          cat > fetch-comments.mjs <<'EOF'
+          cat > probe.mjs <<'EOF'
           const ENV = 'https://twikoo-deepseacat.vercel.app';
-          const paths = [
-            '/guestbook/',
-            '/about/', '/link/', '/music/', '/movies/', '/games/', '/archives/',
-            '/posts/77770c79.html', '/posts/c1572dbd.html', '/posts/15167387.html',
-            '/posts/47e900ac.html', '/posts/edfa2f0e.html', '/posts/ba594024.html',
-            '/posts/4394aee2.html', '/same-clay/',
-            '/2020/12/25/HelloWorld/', '/hello-world/',
-            '/2020/12/27/关于我用yilia主题的一些事/',
-            '/2021/02/07/双系统之今日无事可做/',
-            '/2026/06/02/博客长草了-聊点AI/',
-            '/2026/06/21/香港开卡开户买美股踩坑记录/',
-            '/2026/06/27/同样捏泥人的年纪/',
-            '/2026/07/17/AScript-IOS无越狱多指操作/',
-          ];
+          const call = async (body) => {
+            const res = await fetch(ENV, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) });
+            const text = await res.text();
+            try { return { status: res.status, json: JSON.parse(text) }; } catch { return { status: res.status, text: text.slice(0, 400) }; }
+          };
           const out = {};
-          let total = 0;
-          for (const url of paths) {
-            try {
-              const res = await fetch(ENV, {
-                method: 'POST',
-                headers: { 'content-type': 'application/json' },
-                body: JSON.stringify({ event: 'COMMENT_GET', url, includeReply: true, pageSize: 200 }),
-              });
-              const text = await res.text();
-              let data = null;
-              try { data = JSON.parse(text); } catch { data = { raw: text.slice(0, 500) }; }
-              const count = Array.isArray(data) ? data.length : 0;
-              total += count;
-              out[url] = { status: res.status, count, data };
-              console.log(`${url}  HTTP ${res.status}  ${count} 条`);
-            } catch (error) {
-              out[url] = { error: String(error) };
-              console.log(`${url}  ERROR ${error}`);
-            }
+          out.config = await call({ event: 'GET_CONFIG' });
+          out.version = await call({ event: 'GET_FUNC_VERSION' });
+          const urls = [
+            '/guestbook/', '/guestbook', '/guestbook/index.html', '/',
+            'https://www.deepseacat.cn/guestbook/', 'https://deepseacat.cn/guestbook/',
+            'www.deepseacat.cn/guestbook/', '/message/', '/留言/', '/guestbook.html',
+            '/posts/77770c79.html', '/2020/12/25/HelloWorld/', '/about/', '/link/',
+          ];
+          out.comments = {};
+          for (const url of urls) {
+            const r = await call({ event: 'COMMENT_GET', url, includeReply: true, pageSize: 200 });
+            const d = r.json;
+            out.comments[url] = r.status === 200 && d ? { count: d.count, more: d.more, dataLength: Array.isArray(d.data) ? d.data.length : null } : r;
+            console.log(url, JSON.stringify(out.comments[url]));
           }
+          // 顺手看看计数器/其他事件是否也全空
+          out.count = await call({ event: 'COMMENT_COUNT', urls: urls });
           const fs = await import('node:fs/promises');
-          await fs.writeFile('comments-raw.json', JSON.stringify({ fetchedAt: new Date().toISOString(), total, urls: out }, null, 2));
-          console.log(`合计 ${total} 条`);
+          await fs.writeFile('comments-raw.json', JSON.stringify(out, null, 2));
+          console.log('config:', JSON.stringify(out.config).slice(0, 600));
           EOF
-          node fetch-comments.mjs
-      - name: Commit backup
+          node probe.mjs
+      - name: Commit
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add comments-raw.json
-          git commit -m 'chore: 备份 Twikoo 留言' || echo 'nothing to commit'
+          git commit -m 'chore: 复核 Twikoo 后端数据' || echo 'nothing to commit'
           git push
