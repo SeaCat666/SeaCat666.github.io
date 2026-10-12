@@ -1,0 +1,71 @@
+name: Sync Steam library and screenshots
+
+on:
+  schedule:
+    # Every day at 04:37 Asia/Shanghai; GitHub may start scheduled runs a little later.
+    - cron: '37 20 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: steam-sync
+  cancel-in-progress: false
+
+jobs:
+  sync-and-publish:
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out the current published site
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: master
+
+      - name: Set up Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24'
+
+      - name: Verify the updater
+        run: node --test .github/scripts/*.test.mjs
+
+      - name: Refresh library and public screenshots
+        env:
+          STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
+        run: node .github/scripts/sync-steam.mjs
+
+      - name: Save the complete successful snapshot
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- games/index.html .github/data
+          git diff --cached --check
+          if ! git diff --cached --quiet; then
+            git commit -m 'content: sync Steam library and screenshots'
+            git push origin HEAD:master
+          fi
+
+      - name: Prepare the current static site
+        run: |
+          test "$(git ls-remote origin refs/heads/master | cut -f1)" = "$(git rev-parse HEAD)"
+          mkdir -p "$RUNNER_TEMP/steam-published-site"
+          rsync -a --exclude='.git' --exclude='.github' ./ "$RUNNER_TEMP/steam-published-site/"
+
+      - name: Upload the published site
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: ${{ runner.temp }}/steam-published-site
+
+      # Explicit deployment is required: a GITHUB_TOKEN commit does not trigger a legacy Pages build.
+      # Deploying from the configured source branch also supports the existing master/root Pages setting.
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

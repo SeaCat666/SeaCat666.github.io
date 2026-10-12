@@ -1,0 +1,937 @@
+{
+  "topGames": [
+    {
+      "rank": 1,
+      "title": "我的世界 · Minecraft",
+      "meta": "2015年至今",
+      "comment": "很多人不懂像素沙盒为什么好玩——Minecraft 的乐趣全靠想象力。装Java、搭服、写插件做mod，这些门槛反而是IT启蒙。我也是，初中想手撕MC的源码，从此开始自学编程。",
+      "rating": "⭐⭐⭐⭐⭐"
+    },
+    {
+      "rank": 2,
+      "title": "黎明杀机 · Dead by Daylight",
+      "meta": "2000h+",
+      "comment": "追逐与杀戮的极致体验。因过于暴力血腥无法在国内正常宣传，被第五人格抄袭后补票买版权，热度早已被抢光。2026年2月23日达成全角色全技能，堪比破解版。",
+      "rating": "⭐⭐⭐⭐⭐"
+    },
+    {
+      "rank": 3,
+      "title": "像素生存者 2 · Pixel Survival Game 2",
+      "meta": "2016年至今",
+      "comment": "小学被朋友带入坑，一款极其简陋的ARPG，组队刷副本做装备。说不出为什么就是喜欢。氪金约3500元，其他游戏没有一款超过1000。4.5分扣在实在太简陋。",
+      "rating": "⭐⭐⭐⭐½"
+    },
+    {
+      "rank": 4,
+      "title": "鹅鸭杀 · Goose Goose Duck",
+      "meta": "300h+",
+      "comment": "激情推理。最早爱玩的是 Among Us 太空狼人杀，可惜不照顾中国玩家，被鹅鸭杀取而代之。300小时里230小时是连续肝的，数不清多少通宵。",
+      "rating": "⭐⭐⭐⭐½"
+    },
+    {
+      "rank": 5,
+      "title": "泰拉瑞亚 · Terraria",
+      "meta": "400h+",
+      "comment": "2D横板像素劝退不少人，常被说看不懂。无需解释，通宵挖矿肝疼过自然懂。",
+      "rating": "⭐⭐⭐⭐⭐"
+    },
+    {
+      "rank": 6,
+      "title": "反恐精英 2 · Counter-Strike 2",
+      "meta": "900h+",
+      "comment": "最纯粹的FPS，没有技能没有大招，30分钟肾上腺素拉满。不碰瓦。",
+      "rating": "⭐⭐⭐⭐⭐"
+    },
+    {
+      "rank": 7,
+      "title": "Apex 英雄 · Apex Legends",
+      "meta": "375h+",
+      "comment": "论打击感，没有对手。TTK长，枪法说话。",
+      "rating": "⭐⭐⭐⭐⭐"
+    },
+    {
+      "rank": 8,
+      "title": "炉石传说：酒馆战棋 · Hearthstone Battlegrounds",
+      "meta": "800h+",
+      "comment": "自走棋里最对味的一款。比金铲铲更像麻将，凑三连的快感无与伦比。800h+，还在酒馆里坐着。",
+      "rating": "⭐⭐⭐⭐⭐"
+    },
+    {
+      "rank": 9,
+      "title": "黑神话：悟空 · Black Myth: Wukong",
+      "meta": "200h+",
+      "comment": "瑕不掩瑜，但瑕有点多。国产最强不假，半成品也不假。六周目200h，希望游科把坑填完。",
+      "rating": "⭐⭐⭐⭐"
+    },
+    {
+      "rank": 10,
+      "title": "部落冲突 · Clash of Clans",
+      "meta": "初中时期",
+      "comment": "纯粹的情怀位。初中时光，每天上线收资源打部落战，简单的快乐。",
+      "rating": "⭐⭐⭐⭐⭐"
+    }
+  ],
+  "steamLibrary": [
+    {
+      "name": "黎明杀机",
+      "hours": "3589h",
+      "appId": "381210",
+      "storeUrl": "https://store.steampowered.com/app/381210",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/header.jpg"
+    },
+    {
+      "name": "反恐精英 2",
+      "hours": "801h",
+      "appId": "730",
+      "storeUrl": "https://store.steampowered.com/app/730",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/header.jpg"
+    },
+    {
+      "name": "Apex 英雄",
+      "hours": "375h",
+      "appId": "1172470",
+      "storeUrl": "https://store.steampowered.com/app/1172470",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/header.jpg"
+    },
+    {
+      "name": "泰拉瑞亚",
+      "hours": "371h",
+      "appId": "105600",
+      "storeUrl": "https://store.steampowered.com/app/105600",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg"
+    },
+    {
+      "name": "鹅鸭杀",
+      "hours": "310h",
+      "appId": "1568590",
+      "storeUrl": "https://store.steampowered.com/app/1568590",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1568590/header.jpg"
+    },
+    {
+      "name": "绝地求生",
+      "hours": "288h",
+      "appId": "578080",
+      "storeUrl": "https://store.steampowered.com/app/578080",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/header.jpg"
+    },
+    {
+      "name": "壁纸引擎",
+      "hours": "260h",
+      "appId": "431960",
+      "storeUrl": "https://store.steampowered.com/app/431960",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/431960/header.jpg"
+    },
+    {
+      "name": "黑神话：悟空",
+      "hours": "155h",
+      "appId": "2358720",
+      "storeUrl": "https://store.steampowered.com/app/2358720",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2358720/header.jpg"
+    },
+    {
+      "name": "饥荒联机版",
+      "hours": "134h",
+      "appId": "322330",
+      "storeUrl": "https://store.steampowered.com/app/322330",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322330/header.jpg"
+    },
+    {
+      "name": "死亡细胞",
+      "hours": "89h",
+      "appId": "588650",
+      "storeUrl": "https://store.steampowered.com/app/588650",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/588650/header.jpg"
+    },
+    {
+      "name": "波比的游戏时间",
+      "hours": "85h",
+      "appId": "1721470",
+      "storeUrl": "https://store.steampowered.com/app/1721470",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1721470/header.jpg"
+    },
+    {
+      "name": "巫师 3",
+      "hours": "83h",
+      "appId": "292030",
+      "storeUrl": "https://store.steampowered.com/app/292030",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/header.jpg"
+    },
+    {
+      "name": "几何冲刺",
+      "hours": "79h",
+      "appId": "322170",
+      "storeUrl": "https://store.steampowered.com/app/322170",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322170/header.jpg"
+    },
+    {
+      "name": "空洞骑士",
+      "hours": "75h",
+      "appId": "367520",
+      "storeUrl": "https://store.steampowered.com/app/367520",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/header.jpg"
+    },
+    {
+      "name": "空洞骑士：丝之歌",
+      "hours": "71h",
+      "appId": "1030300",
+      "storeUrl": "https://store.steampowered.com/app/1030300",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030300/header.jpg"
+    },
+    {
+      "name": "tModLoader",
+      "hours": "69h",
+      "appId": "1281930",
+      "storeUrl": "https://store.steampowered.com/app/1281930",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1281930/header.jpg"
+    },
+    {
+      "name": "植物大战僵尸",
+      "hours": "67h",
+      "appId": "3590",
+      "storeUrl": "https://store.steampowered.com/app/3590",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3590/header.jpg"
+    },
+    {
+      "name": "地狱潜者 2",
+      "hours": "66h",
+      "appId": "553850",
+      "storeUrl": "https://store.steampowered.com/app/553850",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/header.jpg"
+    },
+    {
+      "name": "在我们之中",
+      "hours": "62h",
+      "appId": "945360",
+      "storeUrl": "https://store.steampowered.com/app/945360",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/945360/header.jpg"
+    },
+    {
+      "name": "荒野大镖客 2",
+      "hours": "62h",
+      "appId": "1174180",
+      "storeUrl": "https://store.steampowered.com/app/1174180",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg"
+    },
+    {
+      "name": "饥荒",
+      "hours": "60h",
+      "appId": "219740",
+      "storeUrl": "https://store.steampowered.com/app/219740",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/219740/header.jpg"
+    },
+    {
+      "name": "森林",
+      "hours": "59h",
+      "appId": "242760",
+      "storeUrl": "https://store.steampowered.com/app/242760",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/242760/header.jpg"
+    },
+    {
+      "name": "死亡搁浅",
+      "hours": "56h",
+      "appId": "1190460",
+      "storeUrl": "https://store.steampowered.com/app/1190460",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1190460/header.jpg"
+    },
+    {
+      "name": "艾尔登法环",
+      "hours": "56h",
+      "appId": "1245620",
+      "storeUrl": "https://store.steampowered.com/app/1245620",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg"
+    },
+    {
+      "name": "Muse Dash",
+      "hours": "47h",
+      "appId": "774171",
+      "storeUrl": "https://store.steampowered.com/app/774171",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/774171/header.jpg"
+    },
+    {
+      "name": "腐烂国度 2",
+      "hours": "45h",
+      "appId": "495420",
+      "storeUrl": "https://store.steampowered.com/app/495420",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/495420/header.jpg"
+    },
+    {
+      "name": "求生之路 2",
+      "hours": "42h",
+      "appId": "550",
+      "storeUrl": "https://store.steampowered.com/app/550",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/550/header.jpg"
+    },
+    {
+      "name": "永劫无间",
+      "hours": "42h",
+      "appId": "1203220",
+      "storeUrl": "https://store.steampowered.com/app/1203220",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1203220/header.jpg"
+    },
+    {
+      "name": "求生之路",
+      "hours": "33h",
+      "appId": "500",
+      "storeUrl": "https://store.steampowered.com/app/500",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/500/header.jpg"
+    },
+    {
+      "name": "人类一败涂地",
+      "hours": "33h",
+      "appId": "477160",
+      "storeUrl": "https://store.steampowered.com/app/477160",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/477160/header.jpg"
+    },
+    {
+      "name": "潜水员戴夫",
+      "hours": "33h",
+      "appId": "1868140",
+      "storeUrl": "https://store.steampowered.com/app/1868140",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1868140/header.jpg"
+    },
+    {
+      "name": "60秒重制版",
+      "hours": "30h",
+      "appId": "1012880",
+      "storeUrl": "https://store.steampowered.com/app/1012880",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1012880/header.jpg"
+    },
+    {
+      "name": "未转变者",
+      "hours": "29h",
+      "appId": "304930",
+      "storeUrl": "https://store.steampowered.com/app/304930",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304930/header.jpg"
+    },
+    {
+      "name": "底特律：变人",
+      "hours": "28h",
+      "appId": "1222140",
+      "storeUrl": "https://store.steampowered.com/app/1222140",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222140/header.jpg"
+    },
+    {
+      "name": "赛博朋克 2077",
+      "hours": "26h",
+      "appId": "1091500",
+      "storeUrl": "https://store.steampowered.com/app/1091500",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/header.jpg"
+    },
+    {
+      "name": "传送门 2",
+      "hours": "24h",
+      "appId": "620",
+      "storeUrl": "https://store.steampowered.com/app/620",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/header.jpg"
+    },
+    {
+      "name": "数独宇宙",
+      "hours": "24h",
+      "appId": "733070",
+      "storeUrl": "https://store.steampowered.com/app/733070",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/733070/header.jpg"
+    },
+    {
+      "name": "漫威蜘蛛侠重制版",
+      "hours": "24h",
+      "appId": "1817070",
+      "storeUrl": "https://store.steampowered.com/app/1817070",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817070/header.jpg"
+    },
+    {
+      "name": "蔚蓝",
+      "hours": "23h",
+      "appId": "504230",
+      "storeUrl": "https://store.steampowered.com/app/504230",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/header.jpg"
+    },
+    {
+      "name": "PROTOTYPE 2",
+      "hours": "22h",
+      "appId": "115320",
+      "storeUrl": "https://store.steampowered.com/app/115320",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/115320/header.jpg"
+    },
+    {
+      "name": "收获日 2",
+      "hours": "22h",
+      "appId": "218620",
+      "storeUrl": "https://store.steampowered.com/app/218620",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/218620/header.jpg"
+    },
+    {
+      "name": "夺命邮差 2",
+      "hours": "22h",
+      "appId": "223470",
+      "storeUrl": "https://store.steampowered.com/app/223470",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/223470/header.jpg"
+    },
+    {
+      "name": "星露谷物语",
+      "hours": "22h",
+      "appId": "413150",
+      "storeUrl": "https://store.steampowered.com/app/413150",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg"
+    },
+    {
+      "name": "双人成行",
+      "hours": "21h",
+      "appId": "1426210",
+      "storeUrl": "https://store.steampowered.com/app/1426210",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1426210/header.jpg"
+    },
+    {
+      "name": "盖瑞模组",
+      "hours": "20h",
+      "appId": "4000",
+      "storeUrl": "https://store.steampowered.com/app/4000",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4000/header.jpg"
+    },
+    {
+      "name": "蜘蛛侠：迈尔斯",
+      "hours": "20h",
+      "appId": "1817190",
+      "storeUrl": "https://store.steampowered.com/app/1817190",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817190/header.jpg"
+    },
+    {
+      "name": "泰坦陨落 2",
+      "hours": "19h",
+      "appId": "1237970",
+      "storeUrl": "https://store.steampowered.com/app/1237970",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1237970/header.jpg"
+    },
+    {
+      "name": "以撒的结合：重生",
+      "hours": "16h",
+      "appId": "250900",
+      "storeUrl": "https://store.steampowered.com/app/250900",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250900/header.jpg"
+    },
+    {
+      "name": "死亡搁浅导演剪辑版",
+      "hours": "16h",
+      "appId": "1850570",
+      "storeUrl": "https://store.steampowered.com/app/1850570",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1850570/header.jpg"
+    },
+    {
+      "name": "JOJO 全明星大乱斗 R",
+      "hours": "14h",
+      "appId": "1372110",
+      "storeUrl": "https://store.steampowered.com/app/1372110",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1372110/header.jpg"
+    },
+    {
+      "name": "Lossless Scaling",
+      "hours": "13h",
+      "appId": "993090",
+      "storeUrl": "https://store.steampowered.com/app/993090",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/993090/header.jpg"
+    },
+    {
+      "name": "VTube Studio",
+      "hours": "13h",
+      "appId": "1325860",
+      "storeUrl": "https://store.steampowered.com/app/1325860",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1325860/header.jpg"
+    },
+    {
+      "name": "方舟：生存进化",
+      "hours": "12h",
+      "appId": "346110",
+      "storeUrl": "https://store.steampowered.com/app/346110",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/346110/header.jpg"
+    },
+    {
+      "name": "DEAD OR ALIVE Xtreme Venus Vacation",
+      "hours": "12h",
+      "appId": "958260",
+      "storeUrl": "https://store.steampowered.com/app/958260",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/958260/header.jpg"
+    },
+    {
+      "name": "正当防卫",
+      "hours": "11h",
+      "appId": "6880",
+      "storeUrl": "https://store.steampowered.com/app/6880",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/6880/header.jpg"
+    },
+    {
+      "name": "虐杀原形",
+      "hours": "11h",
+      "appId": "10150",
+      "storeUrl": "https://store.steampowered.com/app/10150",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/10150/header.jpg"
+    },
+    {
+      "name": "巫师增强版",
+      "hours": "11h",
+      "appId": "20900",
+      "storeUrl": "https://store.steampowered.com/app/20900",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/20900/header.jpg"
+    },
+    {
+      "name": "僵尸毁灭工程",
+      "hours": "11h",
+      "appId": "108600",
+      "storeUrl": "https://store.steampowered.com/app/108600",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108600/header.jpg"
+    },
+    {
+      "name": "Warframe",
+      "hours": "11h",
+      "appId": "230410",
+      "storeUrl": "https://store.steampowered.com/app/230410",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/230410/header.jpg"
+    },
+    {
+      "name": "Z1 Battle Royale",
+      "hours": "11h",
+      "appId": "433850",
+      "storeUrl": "https://store.steampowered.com/app/433850",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/433850/header.jpg"
+    },
+    {
+      "name": "Next Day: Survival",
+      "hours": "11h",
+      "appId": "519190",
+      "storeUrl": "https://store.steampowered.com/app/519190",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/519190/header.jpg"
+    },
+    {
+      "name": "SCP：秘密实验室",
+      "hours": "11h",
+      "appId": "700330",
+      "storeUrl": "https://store.steampowered.com/app/700330",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/700330/header.jpg"
+    },
+    {
+      "name": "Aimlabs",
+      "hours": "11h",
+      "appId": "714010",
+      "storeUrl": "https://store.steampowered.com/app/714010",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/714010/header.jpg"
+    },
+    {
+      "name": "掘地求升",
+      "hours": "10h",
+      "appId": "240720",
+      "storeUrl": "https://store.steampowered.com/app/240720",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/240720/header.jpg"
+    },
+    {
+      "name": "逃生 2",
+      "hours": "9h",
+      "appId": "414700",
+      "storeUrl": "https://store.steampowered.com/app/414700",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/414700/header.jpg"
+    },
+    {
+      "name": "怪物猎人：世界",
+      "hours": "9h",
+      "appId": "582010",
+      "storeUrl": "https://store.steampowered.com/app/582010",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/582010/header.jpg"
+    },
+    {
+      "name": "逃生：试炼",
+      "hours": "9h",
+      "appId": "1304930",
+      "storeUrl": "https://store.steampowered.com/app/1304930",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1304930/header.jpg"
+    },
+    {
+      "name": "森林之子",
+      "hours": "9h",
+      "appId": "1326470",
+      "storeUrl": "https://store.steampowered.com/app/1326470",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1326470/header.jpg"
+    },
+    {
+      "name": "Tomb Raider Game of the Year",
+      "hours": "8h",
+      "appId": "203160",
+      "storeUrl": "https://store.steampowered.com/app/203160",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/203160/header.jpg"
+    },
+    {
+      "name": "传送门",
+      "hours": "7h",
+      "appId": "400",
+      "storeUrl": "https://store.steampowered.com/app/400",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/400/header.jpg"
+    },
+    {
+      "name": "GTFO",
+      "hours": "7h",
+      "appId": "493520",
+      "storeUrl": "https://store.steampowered.com/app/493520",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/493520/header.jpg"
+    },
+    {
+      "name": "深海搁浅",
+      "hours": "6h",
+      "appId": "313120",
+      "storeUrl": "https://store.steampowered.com/app/313120",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/313120/header.jpg"
+    },
+    {
+      "name": "ICEY",
+      "hours": "6h",
+      "appId": "553640",
+      "storeUrl": "https://store.steampowered.com/app/553640",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553640/header.jpg"
+    },
+    {
+      "name": "冬日回忆",
+      "hours": "6h",
+      "appId": "2495450",
+      "storeUrl": "https://store.steampowered.com/app/2495450",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2495450/header.jpg"
+    },
+    {
+      "name": "侏罗纪世界：进化",
+      "hours": "5h",
+      "appId": "648350",
+      "storeUrl": "https://store.steampowered.com/app/648350",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/648350/header.jpg"
+    },
+    {
+      "name": "去月球",
+      "hours": "4h",
+      "appId": "206440",
+      "storeUrl": "https://store.steampowered.com/app/206440",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/206440/header.jpg"
+    },
+    {
+      "name": "Poly Bridge",
+      "hours": "4h",
+      "appId": "367450",
+      "storeUrl": "https://store.steampowered.com/app/367450",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367450/header.jpg"
+    },
+    {
+      "name": "白色情人节：恐怖学校",
+      "hours": "4h",
+      "appId": "466130",
+      "storeUrl": "https://store.steampowered.com/app/466130",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/466130/header.jpg"
+    },
+    {
+      "name": "欺诈游戏",
+      "hours": "4h",
+      "appId": "466240",
+      "storeUrl": "https://store.steampowered.com/app/466240",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/466240/header.jpg"
+    },
+    {
+      "name": "链在一起",
+      "hours": "4h",
+      "appId": "2567870",
+      "storeUrl": "https://store.steampowered.com/app/2567870",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2567870/header.jpg"
+    },
+    {
+      "name": "Buckshot Roulette",
+      "hours": "4h",
+      "appId": "2835570",
+      "storeUrl": "https://store.steampowered.com/app/2835570",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/header.jpg"
+    },
+    {
+      "name": "The Binding of Isaac",
+      "hours": "3h",
+      "appId": "113200",
+      "storeUrl": "https://store.steampowered.com/app/113200",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/113200/header.jpg"
+    },
+    {
+      "name": "Just Cause 3",
+      "hours": "3h",
+      "appId": "225540",
+      "storeUrl": "https://store.steampowered.com/app/225540",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/225540/header.jpg"
+    },
+    {
+      "name": "Outlast",
+      "hours": "3h",
+      "appId": "238320",
+      "storeUrl": "https://store.steampowered.com/app/238320",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/238320/header.jpg"
+    },
+    {
+      "name": "Submerged",
+      "hours": "3h",
+      "appId": "301860",
+      "storeUrl": "https://store.steampowered.com/app/301860",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/301860/header.jpg"
+    },
+    {
+      "name": "疯狂机器3 - Crazy Machines 3",
+      "hours": "3h",
+      "appId": "351920",
+      "storeUrl": "https://store.steampowered.com/app/351920",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/351920/header.jpg"
+    },
+    {
+      "name": "60 Parsecs!",
+      "hours": "3h",
+      "appId": "646270",
+      "storeUrl": "https://store.steampowered.com/app/646270",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/646270/header.jpg"
+    },
+    {
+      "name": "拣爱",
+      "hours": "3h",
+      "appId": "939400",
+      "storeUrl": "https://store.steampowered.com/app/939400",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/939400/header.jpg"
+    },
+    {
+      "name": "《Spiritfarer》Farewell版",
+      "hours": "3h",
+      "appId": "972660",
+      "storeUrl": "https://store.steampowered.com/app/972660",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/972660/header.jpg"
+    },
+    {
+      "name": "《战地风云 5》",
+      "hours": "3h",
+      "appId": "1238810",
+      "storeUrl": "https://store.steampowered.com/app/1238810",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1238810/header.jpg"
+    },
+    {
+      "name": "《战地风云 2042》",
+      "hours": "3h",
+      "appId": "1517290",
+      "storeUrl": "https://store.steampowered.com/app/1517290",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1517290/header.jpg"
+    },
+    {
+      "name": "Darkest Dungeon",
+      "hours": "2h",
+      "appId": "262060",
+      "storeUrl": "https://store.steampowered.com/app/262060",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/262060/header.jpg"
+    },
+    {
+      "name": "DreadOut",
+      "hours": "2h",
+      "appId": "269790",
+      "storeUrl": "https://store.steampowered.com/app/269790",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/269790/header.jpg"
+    },
+    {
+      "name": "On Rusty Trails",
+      "hours": "2h",
+      "appId": "277700",
+      "storeUrl": "https://store.steampowered.com/app/277700",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/277700/header.jpg"
+    },
+    {
+      "name": "Resident Evil Revelations 2",
+      "hours": "2h",
+      "appId": "287290",
+      "storeUrl": "https://store.steampowered.com/app/287290",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/287290/header.jpg"
+    },
+    {
+      "name": "DOOM",
+      "hours": "2h",
+      "appId": "379720",
+      "storeUrl": "https://store.steampowered.com/app/379720",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/379720/header.jpg"
+    },
+    {
+      "name": "GRIS",
+      "hours": "2h",
+      "appId": "683320",
+      "storeUrl": "https://store.steampowered.com/app/683320",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/683320/header.jpg"
+    },
+    {
+      "name": "Evil Genius 2: World Domination",
+      "hours": "2h",
+      "appId": "700600",
+      "storeUrl": "https://store.steampowered.com/app/700600",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/700600/header.jpg"
+    },
+    {
+      "name": "Back 4 Blood",
+      "hours": "2h",
+      "appId": "924970",
+      "storeUrl": "https://store.steampowered.com/app/924970",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/924970/header.jpg"
+    },
+    {
+      "name": "妖语",
+      "hours": "2h",
+      "appId": "1146630",
+      "storeUrl": "https://store.steampowered.com/app/1146630",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1146630/header.jpg"
+    },
+    {
+      "name": "夏日狂想曲：乡间的难忘回忆",
+      "hours": "2h",
+      "appId": "1227890",
+      "storeUrl": "https://store.steampowered.com/app/1227890",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1227890/header.jpg"
+    },
+    {
+      "name": "MiSide",
+      "hours": "2h",
+      "appId": "2527500",
+      "storeUrl": "https://store.steampowered.com/app/2527500",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2527500/header.jpg"
+    },
+    {
+      "name": "Just Cause 2",
+      "hours": "1h",
+      "appId": "8190",
+      "storeUrl": "https://store.steampowered.com/app/8190",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8190/header.jpg"
+    },
+    {
+      "name": "城市：天际线",
+      "hours": "1h",
+      "appId": "255710",
+      "storeUrl": "https://store.steampowered.com/app/255710",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/255710/header.jpg"
+    },
+    {
+      "name": "Undertale",
+      "hours": "1h",
+      "appId": "391540",
+      "storeUrl": "https://store.steampowered.com/app/391540",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391540/header.jpg"
+    },
+    {
+      "name": "Blackwake",
+      "hours": "1h",
+      "appId": "420290",
+      "storeUrl": "https://store.steampowered.com/app/420290",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/420290/header.jpg"
+    },
+    {
+      "name": "Little Nightmares",
+      "hours": "1h",
+      "appId": "424840",
+      "storeUrl": "https://store.steampowered.com/app/424840",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/424840/header.jpg"
+    },
+    {
+      "name": "Z1 Battle Royale: Test Server",
+      "hours": "1h",
+      "appId": "439700",
+      "storeUrl": "https://store.steampowered.com/app/439700",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/439700/header.jpg"
+    },
+    {
+      "name": "The Lab",
+      "hours": "1h",
+      "appId": "450390",
+      "storeUrl": "https://store.steampowered.com/app/450390",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/450390/header.jpg"
+    },
+    {
+      "name": "Life is Strange 2",
+      "hours": "1h",
+      "appId": "532210",
+      "storeUrl": "https://store.steampowered.com/app/532210",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/532210/header.jpg"
+    },
+    {
+      "name": "Museum of Other Realities",
+      "hours": "1h",
+      "appId": "613900",
+      "storeUrl": "https://store.steampowered.com/app/613900",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/613900/header.jpg"
+    },
+    {
+      "name": "Ultimate Epic Battle Simulator",
+      "hours": "1h",
+      "appId": "616560",
+      "storeUrl": "https://store.steampowered.com/app/616560",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/616560/header.jpg"
+    },
+    {
+      "name": "Blackout Z: Slaughterhouse Edition",
+      "hours": "1h",
+      "appId": "729660",
+      "storeUrl": "https://store.steampowered.com/app/729660",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/729660/header.jpg"
+    },
+    {
+      "name": "无限法则",
+      "hours": "1h",
+      "appId": "755790",
+      "storeUrl": "https://store.steampowered.com/app/755790",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/755790/header.jpg"
+    },
+    {
+      "name": "同步音律喵赛克",
+      "hours": "1h",
+      "appId": "952040",
+      "storeUrl": "https://store.steampowered.com/app/952040",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/952040/header.jpg"
+    },
+    {
+      "name": "Seek Girl Ⅲ",
+      "hours": "1h",
+      "appId": "1191210",
+      "storeUrl": "https://store.steampowered.com/app/1191210",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1191210/header.jpg"
+    },
+    {
+      "name": "Battlefield 1",
+      "hours": "1h",
+      "appId": "1238840",
+      "storeUrl": "https://store.steampowered.com/app/1238840",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1238840/header.jpg"
+    },
+    {
+      "name": "Helltaker",
+      "hours": "1h",
+      "appId": "1289310",
+      "storeUrl": "https://store.steampowered.com/app/1289310",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1289310/header.jpg"
+    },
+    {
+      "name": "消逝的光芒",
+      "hours": "0h",
+      "appId": "239140",
+      "storeUrl": "https://store.steampowered.com/app/239140",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239140/header.jpg"
+    },
+    {
+      "name": "送小羊回家",
+      "hours": "0h",
+      "appId": "259810",
+      "storeUrl": "https://store.steampowered.com/app/259810",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/259810/header.jpg"
+    },
+    {
+      "name": "ARK: The Survival Of The Fittest",
+      "hours": "0h",
+      "appId": "407530",
+      "storeUrl": "https://store.steampowered.com/app/407530",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/407530/header.jpg"
+    },
+    {
+      "name": "《猎人：荒野的召唤》",
+      "hours": "0h",
+      "appId": "518790",
+      "storeUrl": "https://store.steampowered.com/app/518790",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/518790/header.jpg"
+    },
+    {
+      "name": "小小梦魇 强化版",
+      "hours": "0h",
+      "appId": "2149010",
+      "storeUrl": "https://store.steampowered.com/app/2149010",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2149010/header.jpg"
+    }
+  ]
+}
