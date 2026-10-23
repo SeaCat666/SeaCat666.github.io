@@ -822,6 +822,13 @@
       "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1191210/header.jpg"
     },
     {
+      "name": "Marvel's Spider-Man 2",
+      "hours": "1h",
+      "appId": "2651280",
+      "storeUrl": "https://store.steampowered.com/app/2651280",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2651280/header.jpg"
+    },
+    {
       "name": "城市：天际线",
       "hours": "1h",
       "appId": "255710",
