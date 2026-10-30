@@ -836,6 +836,13 @@
       "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/255710/header.jpg"
     },
     {
+      "name": "VRChat",
+      "hours": "1h",
+      "appId": "438100",
+      "storeUrl": "https://store.steampowered.com/app/438100",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/438100/header.jpg"
+    },
+    {
       "name": "Blackout Z: Slaughterhouse Edition",
       "hours": "1h",
       "appId": "729660",
